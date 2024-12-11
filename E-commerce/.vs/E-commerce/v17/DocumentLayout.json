@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|solutionrelative:orders.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|solutionrelative:orders.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|solutionrelative:orders.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|solutionrelative:orders.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|solutionrelative:orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|solutionrelative:orders.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{694EF686-4796-4236-83BC-EECAA01BDACF}|Nuova cartella1{694EF686-4796-4236-83BC-EECAA01BDACF}|C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{694EF686-4796-4236-83BC-EECAA01BDACF}|Nuova cartella1{694EF686-4796-4236-83BC-EECAA01BDACF}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Orders.Api\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Orders.Api\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T17:24:44.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Orders.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Orders.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-11T17:23:43.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Orders.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\appsettings.Development.json",
+              "RelativeToolTip": "Orders.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-11T17:23:01.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Orders.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Program.cs",
+              "RelativeToolTip": "Orders.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T17:21:49.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Orders.Api\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\WeatherForecast.cs",
+              "RelativeToolTip": "Orders.Api\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T17:21:22.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "Orders.Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Dockerfile",
+              "RelativeToolTip": "Orders.Api\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-11T17:20:34.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-12-11T15:22:56.965Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

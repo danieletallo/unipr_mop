@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrdersService", "OrdersService", "{63962A89-2BC2-4E81-AA29-51456FC7FA5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{694EF686-4796-4236-83BC-EECAA01BDACF}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PaymentsService", "PaymentsService", "{208720B3-644F-47AF-84AE-6F7FA06E503D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WarehouseService", "WarehouseService", "{9469CE58-53D6-4475-8BA7-64D1F7495D1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders.Api", "Orders.Api\Orders.Api.csproj", "{60040DE7-BFD2-4033-A764-37DCF7A56E55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60040DE7-BFD2-4033-A764-37DCF7A56E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60040DE7-BFD2-4033-A764-37DCF7A56E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60040DE7-BFD2-4033-A764-37DCF7A56E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60040DE7-BFD2-4033-A764-37DCF7A56E55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{60040DE7-BFD2-4033-A764-37DCF7A56E55} = {63962A89-2BC2-4E81-AA29-51456FC7FA5A}
+	EndGlobalSection
+EndGlobal
