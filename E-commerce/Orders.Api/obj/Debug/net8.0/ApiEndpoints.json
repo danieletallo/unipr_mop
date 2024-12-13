@@ -1,0 +1,84 @@
+[
+  {
+    "ContainingType": "Orders.Api.Controllers.OrdersController",
+    "Method": "CreateOrder",
+    "RelativePath": "Orders/CreateOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderInsertDto",
+        "Type": "Orders.Shared.OrderInsertDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "CreateOrder"
+  },
+  {
+    "ContainingType": "Orders.Api.Controllers.OrdersController",
+    "Method": "DeleteOrder",
+    "RelativePath": "Orders/DeleteOrder",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "DeleteOrder"
+  },
+  {
+    "ContainingType": "Orders.Api.Controllers.OrdersController",
+    "Method": "GetAllOrders",
+    "RelativePath": "Orders/GetAllOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Orders.Shared.OrderReadDto, Orders.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetAllOrders"
+  },
+  {
+    "ContainingType": "Orders.Api.Controllers.OrdersController",
+    "Method": "ReadOrder",
+    "RelativePath": "Orders/ReadOrder",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Orders.Shared.OrderReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "ReadOrder"
+  }
+]
