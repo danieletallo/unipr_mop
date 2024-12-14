@@ -1,0 +1,15 @@
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\bin\Debug\net8.0\Registry.Repository.deps.json
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\bin\Debug\net8.0\Registry.Repository.runtimeconfig.json
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\bin\Debug\net8.0\Registry.Repository.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\bin\Debug\net8.0\Registry.Repository.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\obj\Debug\net8.0\Registry.Repository.csproj.AssemblyReference.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\obj\Debug\net8.0\Registry.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\obj\Debug\net8.0\Registry.Repository.AssemblyInfoInputs.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\obj\Debug\net8.0\Registry.Repository.AssemblyInfo.cs
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\obj\Debug\net8.0\Registry.Repository.csproj.CoreCompileInputs.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\obj\Debug\net8.0\Registry.Repository.sourcelink.json
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\obj\Debug\net8.0\Registry.Repository.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\obj\Debug\net8.0\refint\Registry.Repository.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\obj\Debug\net8.0\Registry.Repository.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\obj\Debug\net8.0\Registry.Repository.genruntimeconfig.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Registry.Repository\obj\Debug\net8.0\ref\Registry.Repository.dll

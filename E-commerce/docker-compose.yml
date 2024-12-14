@@ -11,14 +11,6 @@ services:
     volumes:
       - mssql-data:/var/opt/mssql
 
-  zookeeper:
-    image: 'bitnami/zookeeper:3.9.0'
-    container_name: zookeeper
-    ports:
-      - '2181:2181'
-    environment:
-      - ALLOW_ANONYMOUS_LOGIN=yes
-
   kafka:
     image: 'bitnami/kafka:3.1.0'
     container_name: kafka
@@ -32,6 +24,14 @@ services:
       - ALLOW_PLAINTEXT_LISTENER=yes
     depends_on:
       - zookeeper
+
+  zookeeper:
+    image: 'bitnami/zookeeper:3.9.0'
+    container_name: zookeeper
+    ports:
+      - '2181:2181'
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
 
 volumes:
   mssql-data:
