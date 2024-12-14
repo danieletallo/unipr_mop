@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "URfOK8f9e83IftVz+SO9NMvo6kZlIh3jclLx9MljjPI=",
+  "Source": "Registry.Api",
+  "BasePath": "_content/Registry.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

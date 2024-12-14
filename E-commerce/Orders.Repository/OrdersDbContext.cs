@@ -17,7 +17,7 @@ namespace Orders.Repository
             modelBuilder.Entity<OrderDetail>().HasOne(x => x.Order).WithMany(x => x.OrderDetails).HasForeignKey(x => x.OrderId);
         }
 
-        public DbSet<Order> Orders { get; set; } = null!;
-        public DbSet<OrderDetail> OrderDetails { get; set; } = null!;
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
     }
 }

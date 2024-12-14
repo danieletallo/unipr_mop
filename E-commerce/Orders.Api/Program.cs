@@ -4,6 +4,7 @@ using Orders.Repository.Abstraction;
 using Orders.Repository;
 using Microsoft.EntityFrameworkCore;
 using Orders.Business.Profiles;
+using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
