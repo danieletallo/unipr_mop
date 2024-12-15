@@ -98,8 +98,8 @@ namespace Warehouse.Business
             var itemHistory = await _repository.GetItemHistory(itemId, days, cancellationToken);
             if (itemHistory == null || itemHistory.Any() == false) return new List<ItemHistoryReadDto>();
             
-            var itemHistoryReadDto = _mapper.Map<List<ItemHistoryReadDto>>(itemHistory);
-            return itemHistoryReadDto;
+            var itemsHistoryReadDto = _mapper.Map<List<ItemHistoryReadDto>>(itemHistory);
+            return itemsHistoryReadDto;
         }
     }
 }
