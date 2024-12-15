@@ -1,0 +1,13 @@
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\bin\Debug\net8.0\Warehouse.Repository.deps.json
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\bin\Debug\net8.0\Warehouse.Repository.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\bin\Debug\net8.0\Warehouse.Repository.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\obj\Debug\net8.0\Warehouse.Repository.csproj.AssemblyReference.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\obj\Debug\net8.0\Warehouse.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\obj\Debug\net8.0\Warehouse.Repository.AssemblyInfoInputs.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\obj\Debug\net8.0\Warehouse.Repository.AssemblyInfo.cs
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\obj\Debug\net8.0\Warehouse.Repository.csproj.CoreCompileInputs.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\obj\Debug\net8.0\Warehouse.Repository.sourcelink.json
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\obj\Debug\net8.0\Warehouse.Repository.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\obj\Debug\net8.0\refint\Warehouse.Repository.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\obj\Debug\net8.0\Warehouse.Repository.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Repository\obj\Debug\net8.0\ref\Warehouse.Repository.dll
