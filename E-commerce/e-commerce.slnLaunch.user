@@ -11,6 +11,11 @@
         "Path": "Registry.Api\\Registry.Api.csproj",
         "Action": "Start",
         "DebugTarget": "https"
+      },
+      {
+        "Path": "Warehouse.Api\\Warehouse.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
       }
     ]
   }

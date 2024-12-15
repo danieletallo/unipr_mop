@@ -6,6 +6,8 @@ namespace Orders.Repository
     public class OrdersDbContext : DbContext
     {
         public OrdersDbContext(DbContextOptions<OrdersDbContext> dbContextOptions) : base(dbContextOptions) { }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -16,8 +18,5 @@ namespace Orders.Repository
             modelBuilder.Entity<OrderDetail>().Property(e => e.Id).ValueGeneratedOnAdd();
             modelBuilder.Entity<OrderDetail>().HasOne(x => x.Order).WithMany(x => x.OrderDetails).HasForeignKey(x => x.OrderId);
         }
-
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderDetail> OrderDetails { get; set; }
     }
 }

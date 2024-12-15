@@ -1,0 +1,121 @@
+[
+  {
+    "ContainingType": "Warehouse.Api.Controllers.WarehouseController",
+    "Method": "CreateItem",
+    "RelativePath": "Warehouse/CreateItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemInsertDto",
+        "Type": "Warehouse.Shared.ItemInsertDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "CreateItem"
+  },
+  {
+    "ContainingType": "Warehouse.Api.Controllers.WarehouseController",
+    "Method": "GetAllItems",
+    "RelativePath": "Warehouse/GetAllItems",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Warehouse.Shared.ItemReadDto, Warehouse.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetAllItems"
+  },
+  {
+    "ContainingType": "Warehouse.Api.Controllers.WarehouseController",
+    "Method": "GetItemHistory",
+    "RelativePath": "Warehouse/GetItemHistory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "days",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Warehouse.Shared.ItemHistoryReadDto, Warehouse.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetItemHistory"
+  },
+  {
+    "ContainingType": "Warehouse.Api.Controllers.WarehouseController",
+    "Method": "ReadItem",
+    "RelativePath": "Warehouse/ReadItem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Warehouse.Shared.ItemReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "ReadItem"
+  },
+  {
+    "ContainingType": "Warehouse.Api.Controllers.WarehouseController",
+    "Method": "UpdateItem",
+    "RelativePath": "Warehouse/UpdateItem",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "itemUpdateDto",
+        "Type": "Warehouse.Shared.ItemUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UpdateItem"
+  }
+]
