@@ -30,6 +30,7 @@ namespace Orders.Business
             }
 
             var order = _mapper.Map<Order>(orderInsertDto);
+            order.OrderDate = DateTime.Now;
 
             await _repository.CreateOrder(order, cancellationToken);
             await _repository.SaveChangesAsync(cancellationToken);

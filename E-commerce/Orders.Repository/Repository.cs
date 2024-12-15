@@ -21,7 +21,6 @@ namespace Orders.Repository
 
         public async Task CreateOrder(Order order, CancellationToken cancellationToken = default)
         {
-            order.OrderDate = DateTime.Now;
             await _ordersDbContext.Orders.AddAsync(order, cancellationToken);
         }
 
