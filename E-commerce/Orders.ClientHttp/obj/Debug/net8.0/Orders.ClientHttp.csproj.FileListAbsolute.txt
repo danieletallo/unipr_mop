@@ -1,0 +1,16 @@
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\bin\Debug\net8.0\Orders.ClientHttp.deps.json
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\bin\Debug\net8.0\Orders.ClientHttp.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\bin\Debug\net8.0\Orders.ClientHttp.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\bin\Debug\net8.0\Orders.Shared.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\bin\Debug\net8.0\Orders.Shared.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\obj\Debug\net8.0\Orders.ClientHttp.csproj.AssemblyReference.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\obj\Debug\net8.0\Orders.ClientHttp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\obj\Debug\net8.0\Orders.ClientHttp.AssemblyInfoInputs.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\obj\Debug\net8.0\Orders.ClientHttp.AssemblyInfo.cs
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\obj\Debug\net8.0\Orders.ClientHttp.csproj.CoreCompileInputs.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\obj\Debug\net8.0\Orders.ClientHttp.sourcelink.json
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\obj\Debug\net8.0\Orders.C.BE412A45.Up2Date
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\obj\Debug\net8.0\Orders.ClientHttp.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\obj\Debug\net8.0\refint\Orders.ClientHttp.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\obj\Debug\net8.0\Orders.ClientHttp.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.ClientHttp\obj\Debug\net8.0\ref\Orders.ClientHttp.dll

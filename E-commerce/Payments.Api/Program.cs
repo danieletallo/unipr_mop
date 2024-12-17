@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Win32;
 using Payments.Business;
 using Payments.Business.Abstraction;
 using Payments.Business.Profiles;
@@ -15,6 +16,12 @@ builder.Services.AddScoped<IRepository, Repository>();
 builder.Services.AddScoped<IBusiness, Business>();
 
 object value = builder.Services.AddAutoMapper(typeof(AssemblyMarker));
+
+// Adding HttpClient to communicate with other microservices
+builder.Services.AddHttpClient<Orders.ClientHttp.Abstraction.IClientHttp, Orders.ClientHttp.ClientHttp>("OrdersClientHttp", httpClient =>
+{
+    httpClient.BaseAddress = new Uri(builder.Configuration.GetSection("OrdersClientHttp:BaseAddress").Value ?? "");
+});
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

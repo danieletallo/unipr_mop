@@ -1,0 +1,16 @@
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\bin\Debug\net8.0\Warehouse.ClientHttp.deps.json
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\bin\Debug\net8.0\Warehouse.ClientHttp.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\bin\Debug\net8.0\Warehouse.ClientHttp.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\bin\Debug\net8.0\Warehouse.Shared.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\bin\Debug\net8.0\Warehouse.Shared.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\obj\Debug\net8.0\Warehouse.ClientHttp.csproj.AssemblyReference.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\obj\Debug\net8.0\Warehouse.ClientHttp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\obj\Debug\net8.0\Warehouse.ClientHttp.AssemblyInfoInputs.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\obj\Debug\net8.0\Warehouse.ClientHttp.AssemblyInfo.cs
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\obj\Debug\net8.0\Warehouse.ClientHttp.csproj.CoreCompileInputs.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\obj\Debug\net8.0\Warehouse.ClientHttp.sourcelink.json
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\obj\Debug\net8.0\Warehous.2A34E6DA.Up2Date
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\obj\Debug\net8.0\Warehouse.ClientHttp.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\obj\Debug\net8.0\refint\Warehouse.ClientHttp.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\obj\Debug\net8.0\Warehouse.ClientHttp.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.ClientHttp\obj\Debug\net8.0\ref\Warehouse.ClientHttp.dll

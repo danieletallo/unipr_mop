@@ -1,0 +1,16 @@
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\bin\Debug\net8.0\Registry.ClientHttp.deps.json
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\bin\Debug\net8.0\Registry.ClientHttp.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\bin\Debug\net8.0\Registry.ClientHttp.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\bin\Debug\net8.0\Registry.Shared.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\bin\Debug\net8.0\Registry.Shared.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\obj\Debug\net8.0\Registry.ClientHttp.csproj.AssemblyReference.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\obj\Debug\net8.0\Registry.ClientHttp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\obj\Debug\net8.0\Registry.ClientHttp.AssemblyInfoInputs.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\obj\Debug\net8.0\Registry.ClientHttp.AssemblyInfo.cs
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\obj\Debug\net8.0\Registry.ClientHttp.csproj.CoreCompileInputs.cache
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\obj\Debug\net8.0\Registry.ClientHttp.sourcelink.json
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\obj\Debug\net8.0\Registry.7FCFCBAF.Up2Date
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\obj\Debug\net8.0\Registry.ClientHttp.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\obj\Debug\net8.0\refint\Registry.ClientHttp.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\obj\Debug\net8.0\Registry.ClientHttp.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Registry.ClientHttp\obj\Debug\net8.0\ref\Registry.ClientHttp.dll
