@@ -25,6 +25,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Orders.Business\Orders.Business.csproj" />
+    <ProjectReference Include="..\Registry.ClientHttp\Registry.ClientHttp.csproj" />
+    <ProjectReference Include="..\Warehouse.ClientHttp\Warehouse.ClientHttp.csproj" />
   </ItemGroup>
 
   <ItemGroup>

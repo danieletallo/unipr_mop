@@ -27,6 +27,11 @@ namespace Orders.ClientHttp
             });
 
             var response = await _httpClient.GetAsync($"/Orders/ReadOrder{queryString}", cancellationToken);
+            if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                return null;
+            }
+
             return await response.EnsureSuccessStatusCode().Content.ReadFromJsonAsync<OrderReadDto?>(cancellationToken: cancellationToken);
         }
     }

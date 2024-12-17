@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Registry.ClientHttp\Registry.ClientHttp.csproj" />
     <ProjectReference Include="..\Warehouse.Repository\Warehouse.Repository.csproj" />
     <ProjectReference Include="..\Warehouse.Shared\Warehouse.Shared.csproj" />
   </ItemGroup>

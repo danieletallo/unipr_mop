@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Registry.ClientHttp\Registry.ClientHttp.csproj" />
     <ProjectReference Include="..\Warehouse.Business\Warehouse.Business.csproj" />
     <ProjectReference Include="..\Warehouse.Shared\Warehouse.Shared.csproj" />
   </ItemGroup>

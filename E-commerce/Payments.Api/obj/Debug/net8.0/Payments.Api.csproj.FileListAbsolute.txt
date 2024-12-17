@@ -178,3 +178,7 @@ C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientat
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Payments.Api\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Payments.Api\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Payments.Api\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\bin\Debug\net8.0\Orders.ClientHttp.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\bin\Debug\net8.0\Orders.Shared.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\bin\Debug\net8.0\Orders.ClientHttp.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\bin\Debug\net8.0\Orders.Shared.pdb

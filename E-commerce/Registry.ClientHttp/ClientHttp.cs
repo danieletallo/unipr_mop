@@ -27,6 +27,11 @@ namespace Registry.ClientHttp
             });
 
             var response = await _httpClient.GetAsync($"/Registry/ReadCustomer{queryString}", cancellationToken);
+            if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                return null;
+            }
+
             return await response.EnsureSuccessStatusCode().Content.ReadFromJsonAsync<CustomerReadDto?>(cancellationToken: cancellationToken);
         }
 
@@ -37,6 +42,11 @@ namespace Registry.ClientHttp
             });
 
             var response = await _httpClient.GetAsync($"/Registry/ReadSupplier{queryString}", cancellationToken);
+            if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                return null;
+            }
+
             return await response.EnsureSuccessStatusCode().Content.ReadFromJsonAsync<SupplierReadDto?>(cancellationToken: cancellationToken);
         }
     }

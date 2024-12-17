@@ -1771,7 +1771,9 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "Orders.Repository": "1.0.0",
-          "Orders.Shared": "1.0.0"
+          "Orders.Shared": "1.0.0",
+          "Registry.ClientHttp": "1.0.0",
+          "Warehouse.ClientHttp": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Orders.Business.dll": {}
