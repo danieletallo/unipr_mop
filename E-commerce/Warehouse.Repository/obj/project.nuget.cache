@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d+0HVgBfb94=",
+  "dgSpecHash": "t7D42YjIXIY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Repository\\Warehouse.Repository.csproj",
+  "projectFilePath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Warehouse.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\39338\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\39338\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

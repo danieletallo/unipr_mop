@@ -58,8 +58,16 @@ namespace Orders.Business
 
         public async Task<bool> DeleteOrder(int id, CancellationToken cancellationToken = default)
         {
+            var order = await _repository.GetOrderById(id, cancellationToken);
+
+            if (order != null && order.Status != "Pending")
+            {
+                var error = $"Order with ID {id} cannot be deleted because it is not in Pending status.";
+                _logger.LogError(error);
+                throw new Exception(error);
+            }
+
             var result = await _repository.DeleteOrder(id, cancellationToken);
-            
             if (result == false)
             {
                 _logger.LogError($"Order with ID {id} not found.");
