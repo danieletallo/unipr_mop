@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Orders.ClientHttp\Orders.ClientHttp.csproj" />
     <ProjectReference Include="..\Payments.Repository\Payments.Repository.csproj" />
     <ProjectReference Include="..\Payments.Shared\Payments.Shared.csproj" />
   </ItemGroup>

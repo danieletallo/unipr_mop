@@ -13,6 +13,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Orders.Repository\Orders.Repository.csproj" />
     <ProjectReference Include="..\Orders.Shared\Orders.Shared.csproj" />
+    <ProjectReference Include="..\Registry.ClientHttp\Registry.ClientHttp.csproj" />
+    <ProjectReference Include="..\Warehouse.ClientHttp\Warehouse.ClientHttp.csproj" />
   </ItemGroup>
 
 </Project>

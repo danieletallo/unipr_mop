@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Orders.ClientHttp\Orders.ClientHttp.csproj" />
     <ProjectReference Include="..\Payments.Business\Payments.Business.csproj" />
   </ItemGroup>
 

@@ -16,3 +16,7 @@ C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientat
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Payments.Business\obj\Debug\net8.0\refint\Payments.Business.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Payments.Business\obj\Debug\net8.0\Payments.Business.pdb
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Payments.Business\obj\Debug\net8.0\ref\Payments.Business.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Business\bin\Debug\net8.0\Orders.ClientHttp.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Business\bin\Debug\net8.0\Orders.Shared.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Business\bin\Debug\net8.0\Orders.ClientHttp.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Business\bin\Debug\net8.0\Orders.Shared.pdb

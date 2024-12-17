@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Logging;
+using Registry.Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,16 +18,27 @@ namespace Warehouse.Business
         private readonly IRepository _repository;
         private readonly ILogger<Business> _logger;
         private readonly IMapper _mapper;
+        private readonly Registry.ClientHttp.Abstraction.IClientHttp _registryClientHttp;
 
-        public Business(IRepository repository, ILogger<Business> logger, IMapper mapper)
+        public Business(IRepository repository, ILogger<Business> logger, IMapper mapper,
+                        Registry.ClientHttp.Abstraction.IClientHttp registryClientHttp)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
+            _registryClientHttp = registryClientHttp;
         }
 
         public async Task CreateItem(ItemInsertDto itemInsertDto, CancellationToken cancellationToken = default)
         {
+            SupplierReadDto? supplier = await _registryClientHttp.ReadSupplier(itemInsertDto.SupplierId, cancellationToken);
+            if (supplier == null)
+            {
+                var error = $"Item creation failed: supplier with ID {itemInsertDto.SupplierId} not found.";
+                _logger.LogError(error);
+                throw new Exception(error);
+            }
+
             var item = _mapper.Map<Item>(itemInsertDto);
 
             await _repository.CreateItem(item, cancellationToken);

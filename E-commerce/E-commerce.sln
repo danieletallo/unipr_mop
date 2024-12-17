@@ -54,6 +54,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.ClientHttp", "War
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registry.ClientHttp", "Registry.ClientHttp\Registry.ClientHttp.csproj", "{5A400E64-A83E-4A94-8A9C-EF8575F508B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments.ClientHttp", "Payments.ClientHttp\Payments.ClientHttp.csproj", "{93BA8CA1-EFB2-4CB7-967A-BE334947E27D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -136,6 +138,10 @@ Global
 		{5A400E64-A83E-4A94-8A9C-EF8575F508B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A400E64-A83E-4A94-8A9C-EF8575F508B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A400E64-A83E-4A94-8A9C-EF8575F508B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93BA8CA1-EFB2-4CB7-967A-BE334947E27D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93BA8CA1-EFB2-4CB7-967A-BE334947E27D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93BA8CA1-EFB2-4CB7-967A-BE334947E27D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93BA8CA1-EFB2-4CB7-967A-BE334947E27D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,5 +166,6 @@ Global
 		{00C29D04-7355-4011-A5A8-6E4CE59A41A6} = {63962A89-2BC2-4E81-AA29-51456FC7FA5A}
 		{FC0B9ED1-1595-43A1-94D8-F14117428BCC} = {9469CE58-53D6-4475-8BA7-64D1F7495D1E}
 		{5A400E64-A83E-4A94-8A9C-EF8575F508B1} = {F874FB0B-60AE-4940-A1AD-C06E02D8F6AC}
+		{93BA8CA1-EFB2-4CB7-967A-BE334947E27D} = {208720B3-644F-47AF-84AE-6F7FA06E503D}
 	EndGlobalSection
 EndGlobal

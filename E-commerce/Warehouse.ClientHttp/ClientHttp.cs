@@ -27,6 +27,11 @@ namespace Warehouse.ClientHttp
             });
 
             var response = await _httpClient.GetAsync($"/Warehouse/ReadItem{queryString}", cancellationToken);
+            if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                return null;
+            }
+
             return await response.EnsureSuccessStatusCode().Content.ReadFromJsonAsync<ItemReadDto?>(cancellationToken: cancellationToken);
         }
     }
