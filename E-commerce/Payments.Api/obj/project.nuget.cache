@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TIqDoqLLTK8=",
+  "dgSpecHash": "7FQXin8tr9E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Payments.Api\\Payments.Api.csproj",
+  "projectFilePath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Api\\Payments.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\39338\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\39338\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
