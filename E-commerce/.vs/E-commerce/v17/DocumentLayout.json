@@ -3,12 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|solutionrelative:orders.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5A400E64-A83E-4A94-8A9C-EF8575F508B1}|Registry.ClientHttp\\Registry.ClientHttp.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\registry.clienthttp\\clienthttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A400E64-A83E-4A94-8A9C-EF8575F508B1}|Registry.ClientHttp\\Registry.ClientHttp.csproj|solutionrelative:registry.clienthttp\\clienthttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00C29D04-7355-4011-A5A8-6E4CE59A41A6}|Orders.ClientHttp\\Orders.ClientHttp.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.clienthttp\\clienthttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00C29D04-7355-4011-A5A8-6E4CE59A41A6}|Orders.ClientHttp\\Orders.ClientHttp.csproj|solutionrelative:orders.clienthttp\\clienthttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00C29D04-7355-4011-A5A8-6E4CE59A41A6}|Orders.ClientHttp\\Orders.ClientHttp.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.clienthttp\\abstraction\\iclienthttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00C29D04-7355-4011-A5A8-6E4CE59A41A6}|Orders.ClientHttp\\Orders.ClientHttp.csproj|solutionrelative:orders.clienthttp\\abstraction\\iclienthttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A400E64-A83E-4A94-8A9C-EF8575F508B1}|Registry.ClientHttp\\Registry.ClientHttp.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\registry.clienthttp\\abstraction\\iclienthttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A400E64-A83E-4A94-8A9C-EF8575F508B1}|Registry.ClientHttp\\Registry.ClientHttp.csproj|solutionrelative:registry.clienthttp\\abstraction\\iclienthttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC0B9ED1-1595-43A1-94D8-F14117428BCC}|Warehouse.ClientHttp\\Warehouse.ClientHttp.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\warehouse.clienthttp\\abstraction\\iclienthttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC0B9ED1-1595-43A1-94D8-F14117428BCC}|Warehouse.ClientHttp\\Warehouse.ClientHttp.csproj|solutionrelative:warehouse.clienthttp\\abstraction\\iclienthttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21C0C172-9DE7-4E27-8A36-E5417F08E3C3}|Registry.Api\\Registry.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\registry.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21C0C172-9DE7-4E27-8A36-E5417F08E3C3}|Registry.Api\\Registry.Api.csproj|solutionrelative:registry.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21C0C172-9DE7-4E27-8A36-E5417F08E3C3}|Registry.Api\\Registry.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\registry.api\\controllers\\registrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21C0C172-9DE7-4E27-8A36-E5417F08E3C3}|Registry.Api\\Registry.Api.csproj|solutionrelative:registry.api\\controllers\\registrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC0B9ED1-1595-43A1-94D8-F14117428BCC}|Warehouse.ClientHttp\\Warehouse.ClientHttp.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\warehouse.clienthttp\\clienthttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC0B9ED1-1595-43A1-94D8-F14117428BCC}|Warehouse.ClientHttp\\Warehouse.ClientHttp.csproj|solutionrelative:warehouse.clienthttp\\clienthttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11D7CBE8-F676-4DE3-B5EB-9A7B55051ED0}|Warehouse.Api\\Warehouse.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\warehouse.api\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11D7CBE8-F676-4DE3-B5EB-9A7B55051ED0}|Warehouse.Api\\Warehouse.Api.csproj|solutionrelative:warehouse.api\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D53C231-EF8A-4107-B1DA-1F9EBF94AC10}|Orders.Repository\\Orders.Repository.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D53C231-EF8A-4107-B1DA-1F9EBF94AC10}|Orders.Repository\\Orders.Repository.csproj|solutionrelative:orders.repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|solutionrelative:orders.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9522F2FF-6D0B-49E4-80BD-8A97E6C6AEA1}|Orders.Business\\Orders.Business.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.business\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9522F2FF-6D0B-49E4-80BD-8A97E6C6AEA1}|Orders.Business\\Orders.Business.csproj|solutionrelative:orders.business\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D53C231-EF8A-4107-B1DA-1F9EBF94AC10}|Orders.Repository\\Orders.Repository.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.repository\\abstraction\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D53C231-EF8A-4107-B1DA-1F9EBF94AC10}|Orders.Repository\\Orders.Repository.csproj|solutionrelative:orders.repository\\abstraction\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9522F2FF-6D0B-49E4-80BD-8A97E6C6AEA1}|Orders.Business\\Orders.Business.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.business\\abstraction\\ibusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9522F2FF-6D0B-49E4-80BD-8A97E6C6AEA1}|Orders.Business\\Orders.Business.csproj|solutionrelative:orders.business\\abstraction\\ibusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14814505-78B9-4366-A471-558E4C7A9F34}|Payments.Api\\Payments.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\payments.api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14814505-78B9-4366-A471-558E4C7A9F34}|Payments.Api\\Payments.Api.csproj|solutionrelative:payments.api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90A47AB-601C-49E9-8971-4789992503DE}|Payments.Business\\Payments.Business.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\payments.business\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90A47AB-601C-49E9-8971-4789992503DE}|Payments.Business\\Payments.Business.csproj|solutionrelative:payments.business\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|solutionrelative:orders.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|solutionrelative:orders.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D53C231-EF8A-4107-B1DA-1F9EBF94AC10}|Orders.Repository\\Orders.Repository.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.repository\\ordersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +95,8 @@
       "RelativeMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|solutionrelative:orders.api\\orders.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60040DE7-BFD2-4033-A764-37DCF7A56E55}|Orders.Api\\Orders.Api.csproj|solutionrelative:orders.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA8EA1CB-CE5A-454D-9127-39FD654428D0}|Warehouse.Business\\Warehouse.Business.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\warehouse.business\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA8EA1CB-CE5A-454D-9127-39FD654428D0}|Warehouse.Business\\Warehouse.Business.csproj|solutionrelative:warehouse.business\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B90A47AB-601C-49E9-8971-4789992503DE}|Payments.Business\\Payments.Business.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\payments.business\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B90A47AB-601C-49E9-8971-4789992503DE}|Payments.Business\\Payments.Business.csproj|solutionrelative:payments.business\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14814505-78B9-4366-A471-558E4C7A9F34}|Payments.Api\\Payments.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\payments.api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14814505-78B9-4366-A471-558E4C7A9F34}|Payments.Api\\Payments.Api.csproj|solutionrelative:payments.api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14814505-78B9-4366-A471-558E4C7A9F34}|Payments.Api\\Payments.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\payments.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,20 +127,8 @@
       "RelativeMoniker": "D:0:0:{4F98581C-FACE-432D-B463-A8F08FB54C79}|Registry.Business\\Registry.Business.csproj|solutionrelative:registry.business\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21C0C172-9DE7-4E27-8A36-E5417F08E3C3}|Registry.Api\\Registry.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\registry.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21C0C172-9DE7-4E27-8A36-E5417F08E3C3}|Registry.Api\\Registry.Api.csproj|solutionrelative:registry.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11D7CBE8-F676-4DE3-B5EB-9A7B55051ED0}|Warehouse.Api\\Warehouse.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\warehouse.api\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11D7CBE8-F676-4DE3-B5EB-9A7B55051ED0}|Warehouse.Api\\Warehouse.Api.csproj|solutionrelative:warehouse.api\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{11D7CBE8-F676-4DE3-B5EB-9A7B55051ED0}|Warehouse.Api\\Warehouse.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\warehouse.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11D7CBE8-F676-4DE3-B5EB-9A7B55051ED0}|Warehouse.Api\\Warehouse.Api.csproj|solutionrelative:warehouse.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21C0C172-9DE7-4E27-8A36-E5417F08E3C3}|Registry.Api\\Registry.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\registry.api\\controllers\\registrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21C0C172-9DE7-4E27-8A36-E5417F08E3C3}|Registry.Api\\Registry.Api.csproj|solutionrelative:registry.api\\controllers\\registrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14814505-78B9-4366-A471-558E4C7A9F34}|Payments.Api\\Payments.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\payments.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -97,14 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{21C0C172-9DE7-4E27-8A36-E5417F08E3C3}|Registry.Api\\Registry.Api.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\registry.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{21C0C172-9DE7-4E27-8A36-E5417F08E3C3}|Registry.Api\\Registry.Api.csproj|solutionrelative:registry.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D53C231-EF8A-4107-B1DA-1F9EBF94AC10}|Orders.Repository\\Orders.Repository.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D53C231-EF8A-4107-B1DA-1F9EBF94AC10}|Orders.Repository\\Orders.Repository.csproj|solutionrelative:orders.repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9522F2FF-6D0B-49E4-80BD-8A97E6C6AEA1}|Orders.Business\\Orders.Business.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.business\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9522F2FF-6D0B-49E4-80BD-8A97E6C6AEA1}|Orders.Business\\Orders.Business.csproj|solutionrelative:orders.business\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1C37CB5D-3635-4EE7-862A-153D9322B6BC}|Payments.Repository\\Payments.Repository.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\payments.repository\\abstraction\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -263,14 +295,6 @@
       "RelativeMoniker": "D:0:0:{3D53C231-EF8A-4107-B1DA-1F9EBF94AC10}|Orders.Repository\\Orders.Repository.csproj|solutionrelative:orders.repository\\migrations\\20241213065259_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9522F2FF-6D0B-49E4-80BD-8A97E6C6AEA1}|Orders.Business\\Orders.Business.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.business\\abstraction\\ibusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9522F2FF-6D0B-49E4-80BD-8A97E6C6AEA1}|Orders.Business\\Orders.Business.csproj|solutionrelative:orders.business\\abstraction\\ibusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D53C231-EF8A-4107-B1DA-1F9EBF94AC10}|Orders.Repository\\Orders.Repository.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\orders.repository\\abstraction\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D53C231-EF8A-4107-B1DA-1F9EBF94AC10}|Orders.Repository\\Orders.Repository.csproj|solutionrelative:orders.repository\\abstraction\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC044D94-1A4B-492F-8E14-864F66C38F5A}|Registry.Repository\\Registry.Repository.csproj|c:\\users\\39338\\desktop\\universita\\3 anno\\3anno_1semestre\\programmazione orientata ai microservizi\\unipr_mop\\e-commerce\\registry.repository\\model\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC044D94-1A4B-492F-8E14-864F66C38F5A}|Registry.Repository\\Registry.Repository.csproj|solutionrelative:registry.repository\\model\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -321,8 +345,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 791,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 1024,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -330,56 +354,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrdersDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\OrdersDbContext.cs",
-              "RelativeDocumentMoniker": "Orders.Repository\\OrdersDbContext.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\OrdersDbContext.cs",
-              "RelativeToolTip": "Orders.Repository\\OrdersDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ClientHttp.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\ClientHttp.cs",
+              "RelativeDocumentMoniker": "Registry.ClientHttp\\ClientHttp.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\ClientHttp.cs",
+              "RelativeToolTip": "Registry.ClientHttp\\ClientHttp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:08:13.651Z",
+              "WhenOpened": "2024-12-17T20:35:27.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PaymentsProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Business\\Profiles\\PaymentsProfiles.cs",
-              "RelativeDocumentMoniker": "Payments.Business\\Profiles\\PaymentsProfiles.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Business\\Profiles\\PaymentsProfiles.cs",
-              "RelativeToolTip": "Payments.Business\\Profiles\\PaymentsProfiles.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IClientHttp.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\Abstraction\\IClientHttp.cs",
+              "RelativeDocumentMoniker": "Registry.ClientHttp\\Abstraction\\IClientHttp.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\Abstraction\\IClientHttp.cs",
+              "RelativeToolTip": "Registry.ClientHttp\\Abstraction\\IClientHttp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T14:19:12.819Z"
+              "WhenOpened": "2024-12-17T20:34:25.037Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "WarehouseProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Business\\Profiles\\WarehouseProfiles.cs",
-              "RelativeDocumentMoniker": "Warehouse.Business\\Profiles\\WarehouseProfiles.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Business\\Profiles\\WarehouseProfiles.cs",
-              "RelativeToolTip": "Warehouse.Business\\Profiles\\WarehouseProfiles.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ClientHttp.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.ClientHttp\\ClientHttp.cs",
+              "RelativeDocumentMoniker": "Warehouse.ClientHttp\\ClientHttp.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.ClientHttp\\ClientHttp.cs",
+              "RelativeToolTip": "Warehouse.ClientHttp\\ClientHttp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T08:48:10.624Z"
+              "WhenOpened": "2024-12-17T20:30:07.744Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "Payments.Repository\\Repository.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Repository\\Repository.cs",
-              "RelativeToolTip": "Payments.Repository\\Repository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAiwC4AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IClientHttp.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.ClientHttp\\Abstraction\\IClientHttp.cs",
+              "RelativeDocumentMoniker": "Warehouse.ClientHttp\\Abstraction\\IClientHttp.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.ClientHttp\\Abstraction\\IClientHttp.cs",
+              "RelativeToolTip": "Warehouse.ClientHttp\\Abstraction\\IClientHttp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T14:10:43.928Z"
+              "WhenOpened": "2024-12-17T20:29:56.864Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Api\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "Payments.Api\\Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Api\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "Payments.Api\\Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:47:53.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Orders.Api\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Orders.Api\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T00:13:31.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Business\\Abstraction\\IBusiness.cs",
+              "RelativeDocumentMoniker": "Orders.Business\\Abstraction\\IBusiness.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Business\\Abstraction\\IBusiness.cs",
+              "RelativeToolTip": "Orders.Business\\Abstraction\\IBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T23:57:06.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Business.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Business\\Business.cs",
+              "RelativeDocumentMoniker": "Orders.Business\\Business.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Business\\Business.cs",
+              "RelativeToolTip": "Orders.Business\\Business.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAswCsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T08:54:22.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\Abstraction\\IRepository.cs",
+              "RelativeDocumentMoniker": "Orders.Repository\\Abstraction\\IRepository.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\Abstraction\\IRepository.cs",
+              "RelativeToolTip": "Orders.Repository\\Abstraction\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T23:46:52.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Registry.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Program.cs",
+              "RelativeToolTip": "Registry.Api\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T12:57:14.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Business.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Business\\Business.cs",
+              "RelativeDocumentMoniker": "Payments.Business\\Business.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Business\\Business.cs",
+              "RelativeToolTip": "Payments.Business\\Business.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAwFQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:18:25.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Orders.Api\\appsettings.Development.json",
@@ -392,7 +510,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
+              "Title": "PaymentsDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Repository\\Migrations\\PaymentsDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Payments.Repository\\Migrations\\PaymentsDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Repository\\Migrations\\PaymentsDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Payments.Repository\\Migrations\\PaymentsDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T15:08:09.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Repository\\Abstraction\\IRepository.cs",
               "RelativeDocumentMoniker": "Payments.Repository\\Abstraction\\IRepository.cs",
@@ -408,19 +538,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PaymentsDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Repository\\Migrations\\PaymentsDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Payments.Repository\\Migrations\\PaymentsDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Repository\\Migrations\\PaymentsDbContextModelSnapshot.cs",
-              "RelativeToolTip": "Payments.Repository\\Migrations\\PaymentsDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 36,
+              "Title": "PaymentsProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Business\\Profiles\\PaymentsProfiles.cs",
+              "RelativeDocumentMoniker": "Payments.Business\\Profiles\\PaymentsProfiles.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Business\\Profiles\\PaymentsProfiles.cs",
+              "RelativeToolTip": "Payments.Business\\Profiles\\PaymentsProfiles.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T15:08:09.708Z"
+              "WhenOpened": "2024-12-15T14:19:12.819Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 18,
+              "Title": "OrdersDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\OrdersDbContext.cs",
+              "RelativeDocumentMoniker": "Orders.Repository\\OrdersDbContext.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\OrdersDbContext.cs",
+              "RelativeToolTip": "Orders.Repository\\OrdersDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T13:08:13.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "Payments.Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Repository\\Repository.cs",
+              "RelativeToolTip": "Payments.Repository\\Repository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:10:43.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "WarehouseProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Business\\Profiles\\WarehouseProfiles.cs",
+              "RelativeDocumentMoniker": "Warehouse.Business\\Profiles\\WarehouseProfiles.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Business\\Profiles\\WarehouseProfiles.cs",
+              "RelativeToolTip": "Warehouse.Business\\Profiles\\WarehouseProfiles.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T08:48:10.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Registry.Api\\appsettings.Development.json",
@@ -432,31 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Business.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Business\\Business.cs",
-              "RelativeDocumentMoniker": "Orders.Business\\Business.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Business\\Business.cs",
-              "RelativeToolTip": "Orders.Business\\Business.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAADwvyAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T08:54:22.845Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Registry.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Program.cs",
-              "RelativeToolTip": "Registry.Api\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T12:57:14.551Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Payments.Api\\appsettings.Development.json",
@@ -468,7 +611,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Api\\Program.cs",
               "RelativeDocumentMoniker": "Warehouse.Api\\Program.cs",
@@ -480,7 +623,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 39,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Abstraction\\IRepository.cs",
               "RelativeDocumentMoniker": "Warehouse.Repository\\Abstraction\\IRepository.cs",
@@ -492,7 +635,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 40,
               "Title": "PaymentsDbContext.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Repository\\PaymentsDbContext.cs",
               "RelativeDocumentMoniker": "Payments.Repository\\PaymentsDbContext.cs",
@@ -504,7 +647,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 20,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -516,19 +659,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "Orders.Api\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "Orders.Api\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T00:13:31.539Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 22,
               "Title": "Orders.Api.http",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Orders.Api.http",
               "RelativeDocumentMoniker": "Orders.Api\\Orders.Api.http",
@@ -540,7 +671,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Program.cs",
               "RelativeDocumentMoniker": "Orders.Api\\Program.cs",
@@ -552,7 +683,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 21,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\Model\\Order.cs",
               "RelativeDocumentMoniker": "Orders.Repository\\Model\\Order.cs",
@@ -564,7 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
               "Title": "20241215150753_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Repository\\Migrations\\20241215150753_InitialCreate.cs",
               "RelativeDocumentMoniker": "Payments.Repository\\Migrations\\20241215150753_InitialCreate.cs",
@@ -576,19 +707,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Business.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Business\\Business.cs",
-              "RelativeDocumentMoniker": "Payments.Business\\Business.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Business\\Business.cs",
-              "RelativeToolTip": "Payments.Business\\Business.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAwFQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T14:18:25.537Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 25,
               "Title": "IBusiness.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Business\\Abstraction\\IBusiness.cs",
               "RelativeDocumentMoniker": "Payments.Business\\Abstraction\\IBusiness.cs",
@@ -600,19 +719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PaymentsController.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Api\\Controllers\\PaymentsController.cs",
-              "RelativeDocumentMoniker": "Payments.Api\\Controllers\\PaymentsController.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Api\\Controllers\\PaymentsController.cs",
-              "RelativeToolTip": "Payments.Api\\Controllers\\PaymentsController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAuwBcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T14:47:53.944Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Api\\Program.cs",
               "RelativeDocumentMoniker": "Payments.Api\\Program.cs",
@@ -624,7 +731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 26,
               "Title": "PaymentInsertDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Shared\\PaymentInsertDto.cs",
               "RelativeDocumentMoniker": "Payments.Shared\\PaymentInsertDto.cs",
@@ -636,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 27,
               "Title": "PaymentUpdateDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Shared\\PaymentUpdateDto.cs",
               "RelativeDocumentMoniker": "Payments.Shared\\PaymentUpdateDto.cs",
@@ -648,7 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 41,
               "Title": "WarehouseDbContext.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\WarehouseDbContext.cs",
               "RelativeDocumentMoniker": "Warehouse.Repository\\WarehouseDbContext.cs",
@@ -660,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 42,
               "Title": "ItemHistory.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Model\\ItemHistory.cs",
               "RelativeDocumentMoniker": "Warehouse.Repository\\Model\\ItemHistory.cs",
@@ -672,7 +779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 43,
               "Title": "Payment.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Repository\\Model\\Payment.cs",
               "RelativeDocumentMoniker": "Payments.Repository\\Model\\Payment.cs",
@@ -684,7 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 44,
               "Title": "PaymentReadDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Shared\\PaymentReadDto.cs",
               "RelativeDocumentMoniker": "Payments.Shared\\PaymentReadDto.cs",
@@ -696,7 +803,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 47,
               "Title": "IBusiness.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Business\\Abstraction\\IBusiness.cs",
               "RelativeDocumentMoniker": "Warehouse.Business\\Abstraction\\IBusiness.cs",
@@ -708,7 +815,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 48,
               "Title": "RegistryDbContext.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Repository\\RegistryDbContext.cs",
               "RelativeDocumentMoniker": "Registry.Repository\\RegistryDbContext.cs",
@@ -720,7 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 83,
               "Title": "20241215095835_ItemsHistoryCreation.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Migrations\\20241215095835_ItemsHistoryCreation.cs",
               "RelativeDocumentMoniker": "Warehouse.Repository\\Migrations\\20241215095835_ItemsHistoryCreation.cs",
@@ -732,7 +839,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 46,
               "Title": "ItemUpdateDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Shared\\ItemUpdateDto.cs",
               "RelativeDocumentMoniker": "Warehouse.Shared\\ItemUpdateDto.cs",
@@ -744,7 +851,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 45,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Model\\Item.cs",
               "RelativeDocumentMoniker": "Warehouse.Repository\\Model\\Item.cs",
@@ -756,7 +863,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 49,
               "Title": "ItemHistoryReadDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Shared\\ItemHistoryReadDto.cs",
               "RelativeDocumentMoniker": "Warehouse.Shared\\ItemHistoryReadDto.cs",
@@ -768,7 +875,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 50,
               "Title": "WarehouseDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Migrations\\WarehouseDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Warehouse.Repository\\Migrations\\WarehouseDbContextModelSnapshot.cs",
@@ -780,7 +887,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 51,
               "Title": "20241215093050_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Migrations\\20241215093050_InitialCreate.cs",
               "RelativeDocumentMoniker": "Warehouse.Repository\\Migrations\\20241215093050_InitialCreate.cs",
@@ -792,7 +899,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 52,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Registry.Api\\Properties\\launchSettings.json",
@@ -804,7 +911,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 55,
               "Title": "RegistryProfiles.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Business\\Profiles\\RegistryProfiles.cs",
               "RelativeDocumentMoniker": "Registry.Business\\Profiles\\RegistryProfiles.cs",
@@ -816,7 +923,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 57,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Repository\\Repository.cs",
               "RelativeDocumentMoniker": "Registry.Repository\\Repository.cs",
@@ -828,7 +935,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 58,
               "Title": "ItemInsertDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Shared\\ItemInsertDto.cs",
               "RelativeDocumentMoniker": "Warehouse.Shared\\ItemInsertDto.cs",
@@ -840,7 +947,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 59,
               "Title": "ItemReadDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Shared\\ItemReadDto.cs",
               "RelativeDocumentMoniker": "Warehouse.Shared\\ItemReadDto.cs",
@@ -852,7 +959,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 60,
               "Title": "Orders.Shared.csproj",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Shared\\Orders.Shared.csproj",
               "RelativeDocumentMoniker": "Orders.Shared\\Orders.Shared.csproj",
@@ -864,7 +971,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 64,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Dockerfile",
               "RelativeDocumentMoniker": "Registry.Api\\Dockerfile",
@@ -876,7 +983,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 62,
               "Title": "Registry.Api",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Registry.Api.csproj",
               "RelativeDocumentMoniker": "Registry.Api\\Registry.Api.csproj",
@@ -887,7 +994,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 61,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Dockerfile",
               "RelativeDocumentMoniker": "Orders.Api\\Dockerfile",
@@ -899,7 +1006,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 68,
               "Title": "Registry.Api.http",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Registry.Api.http",
               "RelativeDocumentMoniker": "Registry.Api\\Registry.Api.http",
@@ -911,7 +1018,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 67,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\appsettings.json",
               "RelativeDocumentMoniker": "Registry.Api\\appsettings.json",
@@ -923,7 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 65,
               "Title": "Registry.Api.csproj",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Registry.Api.csproj",
               "RelativeDocumentMoniker": "Registry.Api\\Registry.Api.csproj",
@@ -935,7 +1042,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 66,
               "Title": "Orders.Api.csproj",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Orders.Api.csproj",
               "RelativeDocumentMoniker": "Orders.Api\\Orders.Api.csproj",
@@ -947,7 +1054,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 71,
               "Title": "20241214001450_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Repository\\Migrations\\20241214001450_InitialCreate.cs",
               "RelativeDocumentMoniker": "Registry.Repository\\Migrations\\20241214001450_InitialCreate.cs",
@@ -959,7 +1066,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 70,
               "Title": "RegistryDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Repository\\Migrations\\RegistryDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Registry.Repository\\Migrations\\RegistryDbContextModelSnapshot.cs",
@@ -971,7 +1078,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 69,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Repository\\Model\\Customer.cs",
               "RelativeDocumentMoniker": "Registry.Repository\\Model\\Customer.cs",
@@ -983,31 +1090,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "IBusiness.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Business\\Abstraction\\IBusiness.cs",
-              "RelativeDocumentMoniker": "Orders.Business\\Abstraction\\IBusiness.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Business\\Abstraction\\IBusiness.cs",
-              "RelativeToolTip": "Orders.Business\\Abstraction\\IBusiness.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T23:57:06.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\Abstraction\\IRepository.cs",
-              "RelativeDocumentMoniker": "Orders.Repository\\Abstraction\\IRepository.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\Abstraction\\IRepository.cs",
-              "RelativeToolTip": "Orders.Repository\\Abstraction\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T23:46:52.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 72,
               "Title": "20241213065259_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\Migrations\\20241213065259_InitialCreate.cs",
               "RelativeDocumentMoniker": "Orders.Repository\\Migrations\\20241213065259_InitialCreate.cs",
@@ -1019,7 +1102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 73,
               "Title": "Supplier.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Repository\\Model\\Supplier.cs",
               "RelativeDocumentMoniker": "Registry.Repository\\Model\\Supplier.cs",
@@ -1031,7 +1114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 76,
               "Title": "SupplierReadDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Shared\\SupplierReadDto.cs",
               "RelativeDocumentMoniker": "Registry.Shared\\SupplierReadDto.cs",
@@ -1043,7 +1126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 75,
               "Title": "CustomerReadDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Shared\\CustomerReadDto.cs",
               "RelativeDocumentMoniker": "Registry.Shared\\CustomerReadDto.cs",
@@ -1055,7 +1138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 77,
               "Title": "SupplierInsertDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Shared\\SupplierInsertDto.cs",
               "RelativeDocumentMoniker": "Registry.Shared\\SupplierInsertDto.cs",
@@ -1067,7 +1150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 74,
               "Title": "CustomerInsertDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Shared\\CustomerInsertDto.cs",
               "RelativeDocumentMoniker": "Registry.Shared\\CustomerInsertDto.cs",
@@ -1079,7 +1162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 81,
               "Title": "OrderInsertDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Shared\\OrderInsertDto.cs",
               "RelativeDocumentMoniker": "Orders.Shared\\OrderInsertDto.cs",
@@ -1091,7 +1174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 82,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\appsettings.json",
               "RelativeDocumentMoniker": "Orders.Api\\appsettings.json",
@@ -1103,7 +1186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 79,
               "Title": "OrderDetailInsertDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Shared\\OrderDetailInsertDto.cs",
               "RelativeDocumentMoniker": "Orders.Shared\\OrderDetailInsertDto.cs",
@@ -1115,7 +1198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 78,
               "Title": "OrderReadDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Shared\\OrderReadDto.cs",
               "RelativeDocumentMoniker": "Orders.Shared\\OrderReadDto.cs",
@@ -1127,7 +1210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 80,
               "Title": "OrderDetailReadDto.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Shared\\OrderDetailReadDto.cs",
               "RelativeDocumentMoniker": "Orders.Shared\\OrderDetailReadDto.cs",
@@ -1140,25 +1223,64 @@
           ]
         },
         {
-          "DockedWidth": 1009,
+          "DockedWidth": 776,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "ClientHttp.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.ClientHttp\\ClientHttp.cs",
+              "RelativeDocumentMoniker": "Orders.ClientHttp\\ClientHttp.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.ClientHttp\\ClientHttp.cs",
+              "RelativeToolTip": "Orders.ClientHttp\\ClientHttp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T20:20:21.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IClientHttp.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.ClientHttp\\Abstraction\\IClientHttp.cs",
+              "RelativeDocumentMoniker": "Orders.ClientHttp\\Abstraction\\IClientHttp.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.ClientHttp\\Abstraction\\IClientHttp.cs",
+              "RelativeToolTip": "Orders.ClientHttp\\Abstraction\\IClientHttp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T20:18:05.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Orders.Api\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Properties\\launchSettings.json",
               "RelativeToolTip": "Orders.Api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-11T17:23:43.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "Orders.Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\Repository.cs",
+              "RelativeToolTip": "Orders.Repository\\Repository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T23:37:04.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "Business.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Business\\Business.cs",
               "RelativeDocumentMoniker": "Warehouse.Business\\Business.cs",
@@ -1171,7 +1293,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 6,
+              "Title": "RegistryController.cs",
+              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Controllers\\RegistryController.cs",
+              "RelativeDocumentMoniker": "Registry.Api\\Controllers\\RegistryController.cs",
+              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Controllers\\RegistryController.cs",
+              "RelativeToolTip": "Registry.Api\\Controllers\\RegistryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:48:03.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "Business.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Business\\Business.cs",
               "RelativeDocumentMoniker": "Registry.Business\\Business.cs",
@@ -1183,43 +1318,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 8,
               "Title": "WarehouseController.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Api\\Controllers\\WarehouseController.cs",
               "RelativeDocumentMoniker": "Warehouse.Api\\Controllers\\WarehouseController.cs",
               "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Api\\Controllers\\WarehouseController.cs",
               "RelativeToolTip": "Warehouse.Api\\Controllers\\WarehouseController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwDUAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwDUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T09:06:48.469Z"
+              "WhenOpened": "2024-12-15T09:06:48.469Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "RegistryController.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Controllers\\RegistryController.cs",
-              "RelativeDocumentMoniker": "Registry.Api\\Controllers\\RegistryController.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Api\\Controllers\\RegistryController.cs",
-              "RelativeToolTip": "Registry.Api\\Controllers\\RegistryController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAswE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T14:48:03.238Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "Orders.Repository\\Repository.cs",
-              "ToolTip": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Repository\\Repository.cs",
-              "RelativeToolTip": "Orders.Repository\\Repository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAADwvxYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T23:37:04.351Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 35,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Repository.cs",
               "RelativeDocumentMoniker": "Warehouse.Repository\\Repository.cs",
@@ -1231,7 +1343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 53,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Warehouse.Api\\appsettings.Development.json",
@@ -1243,7 +1355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 54,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Api\\appsettings.json",
               "RelativeDocumentMoniker": "Warehouse.Api\\appsettings.json",
@@ -1255,7 +1367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 56,
               "Title": "IBusiness.cs",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Business\\Abstraction\\IBusiness.cs",
               "RelativeDocumentMoniker": "Registry.Business\\Abstraction\\IBusiness.cs",
@@ -1267,7 +1379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 63,
               "Title": "Orders.Api",
               "DocumentMoniker": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Orders.Api.csproj",
               "RelativeDocumentMoniker": "Orders.Api\\Orders.Api.csproj",

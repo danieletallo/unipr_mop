@@ -76,6 +76,39 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
@@ -1773,6 +1806,54 @@
         "runtime": {
           "bin/placeholder/Orders.Shared.dll": {}
         }
+      },
+      "Registry.ClientHttp/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Registry.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Registry.ClientHttp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Registry.ClientHttp.dll": {}
+        }
+      },
+      "Registry.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Registry.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Registry.Shared.dll": {}
+        }
+      },
+      "Warehouse.ClientHttp/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Warehouse.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Warehouse.ClientHttp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Warehouse.ClientHttp.dll": {}
+        }
+      },
+      "Warehouse.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Warehouse.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Warehouse.Shared.dll": {}
+        }
       }
     }
   },
@@ -1846,6 +1927,32 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "sha512": "Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "sha512": "ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
@@ -5404,6 +5511,26 @@
       "type": "project",
       "path": "../Orders.Shared/Orders.Shared.csproj",
       "msbuildProject": "../Orders.Shared/Orders.Shared.csproj"
+    },
+    "Registry.ClientHttp/1.0.0": {
+      "type": "project",
+      "path": "../Registry.ClientHttp/Registry.ClientHttp.csproj",
+      "msbuildProject": "../Registry.ClientHttp/Registry.ClientHttp.csproj"
+    },
+    "Registry.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Registry.Shared/Registry.Shared.csproj",
+      "msbuildProject": "../Registry.Shared/Registry.Shared.csproj"
+    },
+    "Warehouse.ClientHttp/1.0.0": {
+      "type": "project",
+      "path": "../Warehouse.ClientHttp/Warehouse.ClientHttp.csproj",
+      "msbuildProject": "../Warehouse.ClientHttp/Warehouse.ClientHttp.csproj"
+    },
+    "Warehouse.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Warehouse.Shared/Warehouse.Shared.csproj",
+      "msbuildProject": "../Warehouse.Shared/Warehouse.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5414,7 +5541,9 @@
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.0",
       "Orders.Business >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Registry.ClientHttp >= 1.0.0",
+      "Swashbuckle.AspNetCore >= 6.6.2",
+      "Warehouse.ClientHttp >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5428,7 +5557,7 @@
       "projectName": "Orders.Api",
       "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\Orders.Api.csproj",
       "packagesPath": "C:\\Users\\39338\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Orders.Api\\obj\\",
+      "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5452,6 +5581,12 @@
           "projectReferences": {
             "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Business\\Orders.Business.csproj": {
               "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Business\\Orders.Business.csproj"
+            },
+            "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj": {
+              "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj"
+            },
+            "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.ClientHttp\\Warehouse.ClientHttp.csproj": {
+              "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.ClientHttp\\Warehouse.ClientHttp.csproj"
             }
           }
         }
