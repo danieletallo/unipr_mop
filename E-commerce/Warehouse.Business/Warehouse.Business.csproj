@@ -8,9 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="KafkaFlow" Version="3.0.10" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Orders.Shared\Orders.Shared.csproj" />
     <ProjectReference Include="..\Registry.ClientHttp\Registry.ClientHttp.csproj" />
     <ProjectReference Include="..\Warehouse.Repository\Warehouse.Repository.csproj" />
     <ProjectReference Include="..\Warehouse.Shared\Warehouse.Shared.csproj" />

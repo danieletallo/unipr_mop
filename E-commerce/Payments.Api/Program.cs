@@ -3,8 +3,12 @@ using Microsoft.Win32;
 using Payments.Business;
 using Payments.Business.Abstraction;
 using Payments.Business.Profiles;
+using Payments.Business.Kafka.MessageHandlers;
 using Payments.Repository;
 using Payments.Repository.Abstraction;
+using KafkaFlow;
+using KafkaFlow.Serializer;
+using KafkaFlow.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +17,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<PaymentsDbContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection", b => b.MigrationsAssembly("Payments.Repository")));
 
 builder.Services.AddScoped<IRepository, Repository>();
-builder.Services.AddScoped<IBusiness, Business>();
+builder.Services.AddTransient<IBusiness, Business>();
 
 object value = builder.Services.AddAutoMapper(typeof(AssemblyMarker));
 
@@ -22,6 +26,30 @@ builder.Services.AddHttpClient<Orders.ClientHttp.Abstraction.IClientHttp, Orders
 {
     httpClient.BaseAddress = new Uri(builder.Configuration.GetSection("OrdersClientHttp:BaseAddress").Value ?? "");
 });
+
+// Kafka variables
+var kafkaBrokers = builder.Configuration.GetSection("Kafka:Brokers").Value;
+
+// Add Kafka Consumer for order-created topic
+builder.Services.AddKafka(kafka => kafka
+    .UseConsoleLog()
+    .AddCluster(cluster => cluster
+        .WithBrokers(new[] { kafkaBrokers })
+        .CreateTopicIfNotExists("order-created", 1, 1)
+        .AddConsumer(consumer => consumer
+            .Topic("order-created")
+            .WithGroupId("payments-group")
+            .WithBufferSize(100)
+            .WithWorkersCount(10)
+            .AddMiddlewares(middlewares => middlewares
+                .AddDeserializer<JsonCoreDeserializer>()
+                .AddTypedHandlers(h => h
+                    .AddHandler<OrderCreatedPaymentHandler>()
+                )
+            )
+        )
+    )
+);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -35,6 +63,10 @@ using (var scope = app.Services.CreateScope())
     var dbContext = scope.ServiceProvider.GetRequiredService<PaymentsDbContext>();
     dbContext.Database.Migrate();
 }
+
+// Start Kafka Bus
+var kafkaBus = app.Services.CreateKafkaBus();
+await kafkaBus.StartAsync();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

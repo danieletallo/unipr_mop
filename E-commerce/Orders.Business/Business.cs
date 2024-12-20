@@ -6,6 +6,8 @@ using Orders.Repository.Model;
 using Orders.Shared;
 using Registry.Shared;
 using Warehouse.Shared;
+using KafkaFlow;
+using KafkaFlow.Producers;
 
 namespace Orders.Business
 {
@@ -16,15 +18,18 @@ namespace Orders.Business
         private readonly IMapper _mapper;
         private readonly Registry.ClientHttp.Abstraction.IClientHttp _registryClientHttp;
         private readonly Warehouse.ClientHttp.Abstraction.IClientHttp _warehouseClientHttp;
+        private readonly IMessageProducer _kafkaProducer;
 
         public Business(IRepository repository, ILogger<Business> logger, IMapper mapper,
-                        Registry.ClientHttp.Abstraction.IClientHttp registryClientHttp, Warehouse.ClientHttp.Abstraction.IClientHttp warehouseClientHttp)
+                        Registry.ClientHttp.Abstraction.IClientHttp registryClientHttp, Warehouse.ClientHttp.Abstraction.IClientHttp warehouseClientHttp,
+                        IProducerAccessor producerAccessor)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
             _registryClientHttp = registryClientHttp;
             _warehouseClientHttp = warehouseClientHttp;
+            _kafkaProducer = producerAccessor.GetProducer("orders");
         }
 
         public async Task CreateOrder(OrderInsertDto orderInsertDto, CancellationToken cancellationToken = default)
@@ -44,6 +49,7 @@ namespace Orders.Business
                 throw new Exception(error);
             }
 
+            Dictionary<int, decimal> itemsWithPriceList = new Dictionary<int, decimal>();
             foreach (var orderDetail in orderInsertDto.OrderDetails)
             {
                 ItemReadDto? item = await _warehouseClientHttp.ReadItem(orderDetail.ItemId, cancellationToken);
@@ -60,17 +66,48 @@ namespace Orders.Business
                     _logger.LogError(error);
                     throw new Exception(error);
                 }
-            }
 
-            // TODO - still need to update UnitPrice and TotalPrice somewhere
+                if (itemsWithPriceList.ContainsKey(orderDetail.ItemId) == false)
+                {
+                    itemsWithPriceList.Add(orderDetail.ItemId, item.Price);
+                }
+            }
 
             var order = _mapper.Map<Order>(orderInsertDto);
             order.OrderDate = DateTime.Now;
+
+            // Using the dictionary instead of calling the warehouse service again
+            // I need this because the price can't be put by the client
+            foreach (var orderDetail in order.OrderDetails)
+            {
+                orderDetail.UnitPrice = itemsWithPriceList[orderDetail.ItemId];
+                orderDetail.TotalPrice = orderDetail.Quantity * orderDetail.UnitPrice;
+            }
+            order.TotalAmount = order.OrderDetails.Sum(x => x.TotalPrice);
 
             await _repository.CreateOrder(order, cancellationToken);
             await _repository.SaveChangesAsync(cancellationToken);
 
             _logger.LogInformation("Order created successfully.");
+
+            // Kafka integration
+            await _kafkaProducer.ProduceAsync(
+                "order-created",
+                Guid.NewGuid().ToString(),
+                new OrderCreatedMessage
+                {
+                    OrderId = order.Id,
+                    Amount = order.TotalAmount,
+                    CreatedAt = DateTime.Now,
+                    OrderDetails = order.OrderDetails.Select(x => new OrderCreatedMessageDetail
+                    {
+                        ItemId = x.ItemId,
+                        Quantity = x.Quantity
+                    }).ToList()
+                }
+            );
+
+            _logger.LogInformation($"Topic order-created --> OrderCreatedMessage published for OrderId: {order.Id}");
         }
 
         public async Task<OrderReadDto?> GetOrderById(int id, CancellationToken cancellationToken = default)

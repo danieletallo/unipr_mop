@@ -13,6 +13,7 @@ namespace Warehouse.Business.Abstraction
         Task<ItemReadDto?> GetItemById(int id, CancellationToken cancellationToken = default);
         Task<List<ItemReadDto>> GetAllItems(CancellationToken cancellationToken = default);
         Task<bool> UpdateItem(int id, ItemUpdateDto itemUpdateDto, CancellationToken cancellationToken = default);
+        Task<bool> ChangeItemStock(int id, int quantity, CancellationToken cancellationToken = default);
         Task<List<ItemHistoryReadDto>> GetItemHistory(int itemId, int days, CancellationToken cancellationToken = default);
     }
 }
