@@ -158,6 +158,37 @@
         }
       }
     },
+    "/Warehouse/ChangeItemStock": {
+      "put": {
+        "tags": [
+          "Warehouse"
+        ],
+        "operationId": "ChangeItemStock",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "quantity",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Warehouse/GetItemHistory": {
       "get": {
         "tags": [

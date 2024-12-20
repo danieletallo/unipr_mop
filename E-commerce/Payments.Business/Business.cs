@@ -55,6 +55,7 @@ namespace Payments.Business
 
             var payment = _mapper.Map<Payment>(paymentInsertDto);
             payment.PaymentDate = DateTime.Now;
+            payment.Amount = order.TotalAmount;
             await _repository.CreatePayment(payment, cancellationToken);
             await _repository.SaveChangesAsync(cancellationToken);
             _logger.LogInformation($"Payment created successfully with status {payment.Status}");

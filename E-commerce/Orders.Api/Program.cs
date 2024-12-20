@@ -4,7 +4,8 @@ using Orders.Repository.Abstraction;
 using Orders.Repository;
 using Microsoft.EntityFrameworkCore;
 using Orders.Business.Profiles;
-using Microsoft.Data.SqlClient;
+using KafkaFlow;
+using KafkaFlow.Serializer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +28,28 @@ builder.Services.AddHttpClient<Warehouse.ClientHttp.Abstraction.IClientHttp, War
 {
     httpClient.BaseAddress = new Uri(builder.Configuration.GetSection("WarehouseClientHttp:BaseAddress").Value ?? "");
 });
+
+// Kafka variables
+var kafkaBrokers = builder.Configuration.GetSection("Kafka:Brokers").Value;
+
+// Add Kafka Producer for order-created topic
+builder.Services.AddKafka(
+    kafka => kafka
+        .UseConsoleLog()
+        .AddCluster(
+            cluster => cluster
+                .WithBrokers(new[] { kafkaBrokers })
+                .CreateTopicIfNotExists("order-created", 1, 1)
+                .AddProducer(
+                    "orders",
+                    producer => producer
+                        .DefaultTopic("order-created")
+                        .AddMiddlewares(m =>
+                            m.AddSerializer<JsonCoreSerializer>()
+                            )
+                )
+        )
+);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -200,6 +200,30 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "KafkaFlow": {
+              "target": "Package",
+              "version": "[3.0.10, )"
+            },
+            "KafkaFlow.LogHandler.Console": {
+              "target": "Package",
+              "version": "[3.0.10, )"
+            },
+            "KafkaFlow.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.0.10, )"
+            },
+            "KafkaFlow.Serializer": {
+              "target": "Package",
+              "version": "[2.5.1, )"
+            },
+            "KafkaFlow.Serializer.Json": {
+              "target": "Package",
+              "version": "[1.5.8, )"
+            },
+            "KafkaFlow.Serializer.JsonCore": {
+              "target": "Package",
+              "version": "[3.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -302,6 +326,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "KafkaFlow": {
+              "target": "Package",
+              "version": "[3.0.10, )"
             }
           },
           "imports": [

@@ -63,6 +63,21 @@ namespace Warehouse.Api.Controllers
             return Ok("Item updated successfully!");
         }
 
+        [HttpPut(Name = "ChangeItemStock")]
+        public async Task<ActionResult> ChangeItemStock(int id, int quantity, CancellationToken cancellationToken = default)
+        {
+            var result = await _business.ChangeItemStock(id, quantity, cancellationToken);
+            
+            if (result == false)
+            {
+                var error = $"Item with ID {id} not found.";
+                _logger.LogWarning(error);
+                return NotFound(new { error });
+            }
+
+            return Ok("Item stock added successfully!");
+        }
+
         [HttpGet(Name = "GetItemHistory")]
         public async Task<ActionResult<List<ItemHistoryReadDto>>> GetItemHistory(int itemId, int days, CancellationToken cancellationToken = default)
         {

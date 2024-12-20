@@ -105,6 +105,43 @@ namespace Warehouse.Business
             return true;
         }
 
+        public async Task<bool> ChangeItemStock(int id, int quantity, CancellationToken cancellationToken = default)
+        {
+            var item = await _repository.GetItemById(id, cancellationToken);
+            if (item == null) return false;
+
+            if (quantity == 0)
+            {
+                _logger.LogInformation($"No stock added or removed for Item with ID {id}.");
+                return true;
+            }
+
+            if (item.StockQuantity + quantity < 0)
+            {
+                var error = $"Item with ID {id} has only {item.StockQuantity} in stock. You can't remove {quantity}.";
+                _logger.LogError(error);
+                throw new Exception(error);
+            }
+
+            item.StockQuantity += quantity;
+            await _repository.UpdateItem(item, cancellationToken);
+
+            var newItemHistory = new ItemHistory
+            {
+                ItemId = item.Id,
+                Price = item.Price,
+                StockQuantity = item.StockQuantity,
+                SupplierId = item.SupplierId,
+                Timestamp = DateTime.Now
+            };
+
+            await _repository.CreateItemHistory(newItemHistory, cancellationToken);
+            await _repository.SaveChangesAsync(cancellationToken);
+
+            _logger.LogInformation($"Stock added successfully for Item with ID {id}. The item has now {item.StockQuantity} in stock.");
+            return true;
+        }
+
         public async Task<List<ItemHistoryReadDto>> GetItemHistory(int itemId, int days, CancellationToken cancellationToken = default)
         {
             var itemHistory = await _repository.GetItemHistory(itemId, days, cancellationToken);
