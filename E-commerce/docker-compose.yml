@@ -11,6 +11,15 @@ services:
     volumes:
       - mssql-data:/var/opt/mssql
 
+  adminer:
+    image: adminer:4.8.1
+    container_name: adminer
+    ports:
+      - 2431:8080
+    environment:
+      TZ: Europe/Rome
+      ADMINER_DEFAULT_SERVER: mssql-server
+
   kafka:
     image: 'bitnami/kafka:3.1.0'
     container_name: kafka
@@ -32,6 +41,54 @@ services:
       - '2181:2181'
     environment:
       - ALLOW_ANONYMOUS_LOGIN=yes
+
+  orders-api:
+    image: ghcr.io/danieletallo/orders-api:latest
+    container_name: ecomm-orders-api
+    depends_on:
+      - mssql-server
+      - kafka
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      TZ: Europe/Rome
+    ports:
+      - "5000:80"
+
+  payments-api:
+    image: ghcr.io/danieletallo/payments-api:latest
+    container_name: ecomm-payments-api
+    depends_on:
+      - mssql-server
+      - kafka
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      TZ: Europe/Rome
+    ports:
+      - "5001:80"
+
+  register-api:
+    image: ghcr.io/danieletallo/registry-api:latest
+    container_name: ecomm-registry-api
+    depends_on:
+      - mssql-server
+      - kafka
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      TZ: Europe/Rome
+    ports:
+      - "5002:80"
+
+  warehouse-api:
+    image: ghcr.io/danieletallo/warehouse-api:latest
+    container_name: ecomm-warehouse-api
+    depends_on:
+      - mssql-server
+      - kafka
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      TZ: Europe/Rome
+    ports:
+      - "5003:80"
 
 volumes:
   mssql-data:
