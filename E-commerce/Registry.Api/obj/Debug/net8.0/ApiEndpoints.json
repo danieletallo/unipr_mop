@@ -1,0 +1,132 @@
+[
+  {
+    "ContainingType": "Registry.Api.Controllers.RegistryController",
+    "Method": "CreateCustomer",
+    "RelativePath": "Registry/CreateCustomer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerInsertDto",
+        "Type": "Registry.Shared.CustomerInsertDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "CreateCustomer"
+  },
+  {
+    "ContainingType": "Registry.Api.Controllers.RegistryController",
+    "Method": "CreateSupplier",
+    "RelativePath": "Registry/CreateSupplier",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierInsertDto",
+        "Type": "Registry.Shared.SupplierInsertDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "CreateSupplier"
+  },
+  {
+    "ContainingType": "Registry.Api.Controllers.RegistryController",
+    "Method": "GetAllCustomers",
+    "RelativePath": "Registry/GetAllCustomers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Registry.Shared.CustomerReadDto, Registry.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetAllCustomers"
+  },
+  {
+    "ContainingType": "Registry.Api.Controllers.RegistryController",
+    "Method": "GetAllSuppliers",
+    "RelativePath": "Registry/GetAllSuppliers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Registry.Shared.SupplierReadDto, Registry.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetAllSuppliers"
+  },
+  {
+    "ContainingType": "Registry.Api.Controllers.RegistryController",
+    "Method": "ReadCustomer",
+    "RelativePath": "Registry/ReadCustomer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Registry.Shared.CustomerReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "ReadCustomer"
+  },
+  {
+    "ContainingType": "Registry.Api.Controllers.RegistryController",
+    "Method": "ReadSupplier",
+    "RelativePath": "Registry/ReadSupplier",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Registry.Shared.SupplierReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "ReadSupplier"
+  }
+]
