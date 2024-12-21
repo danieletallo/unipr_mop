@@ -1358,6 +1358,7 @@
           "KafkaFlow": "3.0.10",
           "Orders.Repository": "1.0.0",
           "Orders.Shared": "1.0.0",
+          "Payments.Shared": "1.0.0",
           "Registry.ClientHttp": "1.0.0",
           "Warehouse.ClientHttp": "1.0.0"
         },
@@ -1386,6 +1387,14 @@
       "Orders.Shared/1.0.0": {
         "runtime": {
           "Orders.Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Payments.Shared/1.0.0": {
+        "runtime": {
+          "Payments.Shared.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -2143,6 +2152,11 @@
       "sha512": ""
     },
     "Orders.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Payments.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

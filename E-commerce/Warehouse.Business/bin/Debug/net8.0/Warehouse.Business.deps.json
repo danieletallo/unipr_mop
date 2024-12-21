@@ -11,6 +11,7 @@
           "AutoMapper": "13.0.1",
           "KafkaFlow": "3.0.10",
           "Orders.Shared": "1.0.0",
+          "Payments.Shared": "1.0.0",
           "Registry.ClientHttp": "1.0.0",
           "Warehouse.Repository": "1.0.0",
           "Warehouse.Shared": "1.0.0"
@@ -838,6 +839,14 @@
           }
         }
       },
+      "Payments.Shared/1.0.0": {
+        "runtime": {
+          "Payments.Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Registry.ClientHttp/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -1342,6 +1351,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "Orders.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Payments.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
