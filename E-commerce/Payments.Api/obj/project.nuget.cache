@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rwoTikz0t8A=",
+  "dgSpecHash": "GHZ5HylRfq0=",
   "success": true,
   "projectFilePath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Api\\Payments.Api.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,6 @@
     "C:\\Users\\39338\\.nuget\\packages\\kafkaflow.abstractions\\3.0.10\\kafkaflow.abstractions.3.0.10.nupkg.sha512",
     "C:\\Users\\39338\\.nuget\\packages\\kafkaflow.loghandler.console\\3.0.10\\kafkaflow.loghandler.console.3.0.10.nupkg.sha512",
     "C:\\Users\\39338\\.nuget\\packages\\kafkaflow.microsoft.dependencyinjection\\3.0.10\\kafkaflow.microsoft.dependencyinjection.3.0.10.nupkg.sha512",
-    "C:\\Users\\39338\\.nuget\\packages\\kafkaflow.serializer\\2.5.1\\kafkaflow.serializer.2.5.1.nupkg.sha512",
     "C:\\Users\\39338\\.nuget\\packages\\kafkaflow.serializer.json\\1.5.8\\kafkaflow.serializer.json.1.5.8.nupkg.sha512",
     "C:\\Users\\39338\\.nuget\\packages\\kafkaflow.serializer.jsoncore\\3.0.10\\kafkaflow.serializer.jsoncore.3.0.10.nupkg.sha512",
     "C:\\Users\\39338\\.nuget\\packages\\librdkafka.redist\\2.1.1\\librdkafka.redist.2.1.1.nupkg.sha512",

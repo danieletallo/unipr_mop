@@ -2017,6 +2017,16 @@
           "bin/placeholder/Orders.Shared.dll": {}
         }
       },
+      "Payments.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Payments.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payments.Shared.dll": {}
+        }
+      },
       "Registry.ClientHttp/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2048,6 +2058,7 @@
           "AutoMapper": "13.0.1",
           "KafkaFlow": "3.0.10",
           "Orders.Shared": "1.0.0",
+          "Payments.Shared": "1.0.0",
           "Registry.ClientHttp": "1.0.0",
           "Warehouse.Repository": "1.0.0",
           "Warehouse.Shared": "1.0.0"
@@ -5824,6 +5835,11 @@
       "path": "../Orders.Shared/Orders.Shared.csproj",
       "msbuildProject": "../Orders.Shared/Orders.Shared.csproj"
     },
+    "Payments.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Payments.Shared/Payments.Shared.csproj",
+      "msbuildProject": "../Payments.Shared/Payments.Shared.csproj"
+    },
     "Registry.ClientHttp/1.0.0": {
       "type": "project",
       "path": "../Registry.ClientHttp/Registry.ClientHttp.csproj",
@@ -5878,7 +5894,7 @@
       "projectName": "Warehouse.Api",
       "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Api\\Warehouse.Api.csproj",
       "packagesPath": "C:\\Users\\39338\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Api\\obj\\",
+      "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

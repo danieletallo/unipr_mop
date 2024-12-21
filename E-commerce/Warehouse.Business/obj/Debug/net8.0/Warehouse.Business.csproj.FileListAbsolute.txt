@@ -2,11 +2,13 @@ C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientat
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Warehouse.Business.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Warehouse.Business.pdb
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Orders.Shared.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Payments.Shared.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Registry.ClientHttp.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Registry.Shared.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Warehouse.Repository.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Warehouse.Shared.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Orders.Shared.pdb
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Payments.Shared.pdb
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Registry.ClientHttp.pdb
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Warehouse.Repository.pdb
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Business\bin\Debug\net8.0\Warehouse.Shared.pdb

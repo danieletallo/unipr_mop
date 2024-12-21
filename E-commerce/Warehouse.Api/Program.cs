@@ -28,11 +28,12 @@ builder.Services.AddHttpClient<Registry.ClientHttp.Abstraction.IClientHttp, Regi
 // Kafka variables
 var kafkaBrokers = builder.Configuration.GetSection("Kafka:Brokers").Value;
 
-// Add Kafka Consumer for order-created topic
+// Add Kafka Consumer
 builder.Services.AddKafka(kafka => kafka
     .UseConsoleLog()
     .AddCluster(cluster => cluster
         .WithBrokers(new[] { kafkaBrokers })
+        // Add Kafka Consumer for order-created topic
         .CreateTopicIfNotExists("order-created", 1, 1)
         .AddConsumer(consumer => consumer
             .Topic("order-created")
@@ -43,6 +44,20 @@ builder.Services.AddKafka(kafka => kafka
                 .AddDeserializer<JsonCoreDeserializer>()
                 .AddTypedHandlers(h => h
                     .AddHandler<OrderCreatedWarehouseHandler>()
+                )
+            )
+        )
+        // Add Kafka Consumer for payment-status-changed topic
+        .CreateTopicIfNotExists("payment-status-changed", 1, 1)
+        .AddConsumer(consumer => consumer
+            .Topic("payment-status-changed")
+            .WithGroupId("warehouse-group")
+            .WithBufferSize(100)
+            .WithWorkersCount(10)
+            .AddMiddlewares(middlewares => middlewares
+                .AddDeserializer<JsonCoreDeserializer>()
+                .AddTypedHandlers(h => h
+                    .AddHandler<PaymentStatusChangedWarehouseHandler>()
                 )
             )
         )

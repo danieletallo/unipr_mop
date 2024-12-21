@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Orders.Business.Profiles;
 using KafkaFlow;
 using KafkaFlow.Serializer;
+using Orders.Business.Kafka.MessageHandlers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<OrdersDbContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection", b => b.MigrationsAssembly("Orders.Repository")));
 
 builder.Services.AddScoped<IRepository, Repository>();
-builder.Services.AddScoped<IBusiness, Business>();
+builder.Services.AddTransient<IBusiness, Business>();
 
 object value = builder.Services.AddAutoMapper(typeof(AssemblyMarker));
 
@@ -32,13 +33,14 @@ builder.Services.AddHttpClient<Warehouse.ClientHttp.Abstraction.IClientHttp, War
 // Kafka variables
 var kafkaBrokers = builder.Configuration.GetSection("Kafka:Brokers").Value;
 
-// Add Kafka Producer for order-created topic
+// Add Kafka Producer and Consumer
 builder.Services.AddKafka(
     kafka => kafka
         .UseConsoleLog()
         .AddCluster(
             cluster => cluster
                 .WithBrokers(new[] { kafkaBrokers })
+                // Add Kafka Producer for order-created topic
                 .CreateTopicIfNotExists("order-created", 1, 1)
                 .AddProducer(
                     "orders",
@@ -47,6 +49,20 @@ builder.Services.AddKafka(
                         .AddMiddlewares(m =>
                             m.AddSerializer<JsonCoreSerializer>()
                             )
+                )
+                // Add Kafka Consumer for payment-status-changed topic
+                .CreateTopicIfNotExists("payment-status-changed", 1, 1)
+                .AddConsumer(consumer => consumer
+                    .Topic("payment-status-changed")
+                    .WithGroupId("orders-group")
+                    .WithBufferSize(100)
+                    .WithWorkersCount(10)
+                    .AddMiddlewares(middlewares => middlewares
+                        .AddDeserializer<JsonCoreDeserializer>()
+                        .AddTypedHandlers(h => h
+                            .AddHandler<PaymentStatusChangedOrdersHandler>()
+                        )
+                    )
                 )
         )
 );
@@ -63,6 +79,10 @@ using (var scope = app.Services.CreateScope())
     var dbContext = scope.ServiceProvider.GetRequiredService<OrdersDbContext>();
     dbContext.Database.Migrate();
 }
+
+// Start Kafka Bus
+var kafkaBus = app.Services.CreateKafkaBus();
+await kafkaBus.StartAsync();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -15,7 +15,6 @@ C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientat
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\bin\Debug\net8.0\KafkaFlow.Abstractions.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\bin\Debug\net8.0\KafkaFlow.LogHandler.Console.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\bin\Debug\net8.0\KafkaFlow.Microsoft.DependencyInjection.dll
-C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\bin\Debug\net8.0\KafkaFlow.Serializer.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\bin\Debug\net8.0\KafkaFlow.Serializer.Json.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\bin\Debug\net8.0\KafkaFlow.Serializer.JsonCore.dll
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll

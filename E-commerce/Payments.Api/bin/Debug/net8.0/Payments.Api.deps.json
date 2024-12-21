@@ -11,7 +11,6 @@
           "KafkaFlow": "3.0.10",
           "KafkaFlow.LogHandler.Console": "3.0.10",
           "KafkaFlow.Microsoft.DependencyInjection": "3.0.10",
-          "KafkaFlow.Serializer": "2.5.1",
           "KafkaFlow.Serializer.Json": "1.5.8",
           "KafkaFlow.Serializer.JsonCore": "3.0.10",
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
@@ -140,18 +139,6 @@
           "lib/netstandard2.0/KafkaFlow.Microsoft.DependencyInjection.dll": {
             "assemblyVersion": "3.0.10.0",
             "fileVersion": "3.0.10.0"
-          }
-        }
-      },
-      "KafkaFlow.Serializer/2.5.1": {
-        "dependencies": {
-          "KafkaFlow.Abstractions": "3.0.10",
-          "Microsoft.IO.RecyclableMemoryStream": "3.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/KafkaFlow.Serializer.dll": {
-            "assemblyVersion": "2.5.1.0",
-            "fileVersion": "2.5.1.0"
           }
         }
       },
@@ -1474,13 +1461,6 @@
       "sha512": "sha512-v+jdG+kzPGCIRj40NSovCw9B96tgWug7w8np+LkGMgiLpZ8tDMbSR21sfeYZ24CwgnctMWqy8ZWtMjLh8hrWKw==",
       "path": "kafkaflow.microsoft.dependencyinjection/3.0.10",
       "hashPath": "kafkaflow.microsoft.dependencyinjection.3.0.10.nupkg.sha512"
-    },
-    "KafkaFlow.Serializer/2.5.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-O8xdHEnxxU4NVRClcITMaJxEUjk7+gNlb6pgRhtJQ3aArihdQgPiOPsQ4DoBMIIbHNxFtBCn4kCt7rA+UYzBxQ==",
-      "path": "kafkaflow.serializer/2.5.1",
-      "hashPath": "kafkaflow.serializer.2.5.1.nupkg.sha512"
     },
     "KafkaFlow.Serializer.Json/1.5.8": {
       "type": "package",

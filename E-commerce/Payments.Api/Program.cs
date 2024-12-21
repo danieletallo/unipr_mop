@@ -30,25 +30,38 @@ builder.Services.AddHttpClient<Orders.ClientHttp.Abstraction.IClientHttp, Orders
 // Kafka variables
 var kafkaBrokers = builder.Configuration.GetSection("Kafka:Brokers").Value;
 
-// Add Kafka Consumer for order-created topic
-builder.Services.AddKafka(kafka => kafka
-    .UseConsoleLog()
-    .AddCluster(cluster => cluster
-        .WithBrokers(new[] { kafkaBrokers })
-        .CreateTopicIfNotExists("order-created", 1, 1)
-        .AddConsumer(consumer => consumer
-            .Topic("order-created")
-            .WithGroupId("payments-group")
-            .WithBufferSize(100)
-            .WithWorkersCount(10)
-            .AddMiddlewares(middlewares => middlewares
-                .AddDeserializer<JsonCoreDeserializer>()
-                .AddTypedHandlers(h => h
-                    .AddHandler<OrderCreatedPaymentHandler>()
+// Add Kafka Producer and Consumer
+builder.Services.AddKafka(
+    kafka => kafka
+        .UseConsoleLog()
+        .AddCluster(
+            cluster => cluster
+                .WithBrokers(new[] { kafkaBrokers })
+                // Add Kafka Producer for payment-status-changed topic
+                .CreateTopicIfNotExists("payment-status-changed", 1, 1)
+                .AddProducer(
+                    "payments",
+                    producer => producer
+                        .DefaultTopic("payment-status-changed")
+                        .AddMiddlewares(m =>
+                            m.AddSerializer<JsonCoreSerializer>()
+                            )
                 )
-            )
+                // Add Kafka Consumer for order-created topic
+                .CreateTopicIfNotExists("order-created", 1, 1)
+                .AddConsumer(consumer => consumer
+                    .Topic("order-created")
+                    .WithGroupId("payments-group")
+                    .WithBufferSize(100)
+                    .WithWorkersCount(10)
+                    .AddMiddlewares(middlewares => middlewares
+                        .AddDeserializer<JsonCoreDeserializer>()
+                        .AddTypedHandlers(h => h
+                            .AddHandler<OrderCreatedPaymentHandler>()
+                        )
+                    )
+                )
         )
-    )
 );
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

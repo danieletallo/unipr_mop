@@ -91,23 +91,7 @@ namespace Orders.Business
             _logger.LogInformation("Order created successfully.");
 
             // Kafka integration
-            await _kafkaProducer.ProduceAsync(
-                "order-created",
-                Guid.NewGuid().ToString(),
-                new OrderCreatedMessage
-                {
-                    OrderId = order.Id,
-                    Amount = order.TotalAmount,
-                    CreatedAt = DateTime.Now,
-                    OrderDetails = order.OrderDetails.Select(x => new OrderCreatedMessageDetail
-                    {
-                        ItemId = x.ItemId,
-                        Quantity = x.Quantity
-                    }).ToList()
-                }
-            );
-
-            _logger.LogInformation($"Topic order-created --> OrderCreatedMessage published for OrderId: {order.Id}");
+            await PublishOrderCreatedMessage(order, cancellationToken);
         }
 
         public async Task<OrderReadDto?> GetOrderById(int id, CancellationToken cancellationToken = default)
@@ -126,6 +110,39 @@ namespace Orders.Business
 
             var ordersReadDto = _mapper.Map<List<OrderReadDto>>(orders);
             return ordersReadDto;
+        }
+
+        public async Task<bool> UpdateOrderStatus(int id, string status, CancellationToken cancellationToken = default)
+        {
+            var order = await _repository.GetOrderById(id, cancellationToken);
+            if (order == null)
+            {
+                _logger.LogError($"Order with ID {id} not found.");
+                return false;
+            }
+
+            if (order.Status == "Completed")
+            {
+                _logger.LogError($"Order with ID {id} is already completed. You can't change the status of a completed order!");
+                return false;
+            }
+
+            if (order.Status == "Failed")
+            {
+                throw new InvalidOperationException("You can't change the status of a failed order!");
+            }
+
+            var possibleStatuses = new List<string> { "Pending", "Completed", "Failed" };
+            if (string.IsNullOrEmpty(status) == true || possibleStatuses.Contains(status) == false)
+            {
+                _logger.LogError($"Invalid status {status}! Possible statuses are: {string.Join(", ", possibleStatuses)}");
+                return false;
+            }
+
+            // I don't need to check if there are any completed payments because this method will be called only after the payment is completed!
+            order.Status = status;
+            await _repository.SaveChangesAsync(cancellationToken);
+            return true;
         }
 
         public async Task<bool> DeleteOrder(int id, CancellationToken cancellationToken = default)
@@ -149,6 +166,27 @@ namespace Orders.Business
             await _repository.SaveChangesAsync(cancellationToken);
             _logger.LogInformation($"Order with ID {id} deleted successfully.");
             return true;
+        }
+
+        private async Task PublishOrderCreatedMessage(Order order, CancellationToken cancellationToken = default)
+        {
+            await _kafkaProducer.ProduceAsync(
+                "order-created",
+                Guid.NewGuid().ToString(),
+                new OrderCreatedMessage
+                {
+                    OrderId = order.Id,
+                    Amount = order.TotalAmount,
+                    CreatedAt = DateTime.Now,
+                    OrderDetails = order.OrderDetails.Select(x => new OrderCreatedMessageDetail
+                    {
+                        ItemId = x.ItemId,
+                        Quantity = x.Quantity
+                    }).ToList()
+                }
+            );
+
+            _logger.LogInformation($"Topic order-created --> OrderCreatedMessage published for OrderId: {order.Id}");
         }
     }
 }
