@@ -220,3 +220,4 @@ C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientat
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Api\obj\Debug\net8.0\Warehouse.Api.pdb
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Api\obj\Debug\net8.0\Warehouse.Api.genruntimeconfig.cache
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Warehouse.Api\obj\Debug\net8.0\ref\Warehouse.Api.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Warehouse.Api\bin\Debug\net8.0\Newtonsoft.Json.dll

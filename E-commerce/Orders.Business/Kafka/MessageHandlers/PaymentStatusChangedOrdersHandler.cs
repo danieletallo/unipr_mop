@@ -1,5 +1,6 @@
 ﻿using KafkaFlow;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 using Orders.Business.Abstraction;
 using Orders.Shared;
 using Payments.Shared;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Orders.Business.Kafka.MessageHandlers
 {
-    public class PaymentStatusChangedOrdersHandler : IMessageHandler<PaymentStatusChangedMessage>
+    public class PaymentStatusChangedOrdersHandler : IMessageHandler<string>
     {
         private readonly IServiceProvider _serviceProvider;
 
@@ -20,14 +21,20 @@ namespace Orders.Business.Kafka.MessageHandlers
             _serviceProvider = serviceProvider;
         }
 
-        public async Task Handle(IMessageContext context, PaymentStatusChangedMessage message)
+        public async Task Handle(IMessageContext context, string message)
         {
             using var scope = _serviceProvider.CreateScope();
             var business = scope.ServiceProvider.GetRequiredService<IBusiness>();
 
-            if (message.Status == "Completed" || message.Status == "Failed")
+            var paymentStatusChangedMessage = JsonConvert.DeserializeObject<PaymentStatusChangedMessage>(message);
+            if (paymentStatusChangedMessage == null)
             {
-                await business.UpdateOrderStatus(message.OrderId, message.Status);
+                throw new InvalidOperationException("Failed to deserialize PaymentStatusChangedMessage.");
+            }
+
+            if (paymentStatusChangedMessage.Status == "Completed" || paymentStatusChangedMessage.Status == "Failed")
+            {
+                await business.UpdateOrderStatus(paymentStatusChangedMessage.OrderId, paymentStatusChangedMessage.Status);
             }
         }
     }

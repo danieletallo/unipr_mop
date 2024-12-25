@@ -2,6 +2,7 @@
 using KafkaFlow;
 using KafkaFlow.Producers;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using Orders.Shared;
 using Payments.Business.Abstraction;
 using Payments.Repository.Abstraction;
@@ -67,14 +68,24 @@ namespace Payments.Business
             var payment = _mapper.Map<Payment>(paymentInsertDto);
             payment.PaymentDate = DateTime.Now;
             payment.Amount = order.TotalAmount;
-            await _repository.CreatePayment(payment, cancellationToken);
-            await _repository.SaveChangesAsync(cancellationToken);
-            _logger.LogInformation($"Payment created successfully with status {payment.Status}");
 
-            if (payment.Status == "Completed")
+            // I open a transaction here because I need consistency between the order and the outbox message
+            await _repository.CreateTransaction(async (CancellationToken cancellation) =>
             {
-                await PublishPaymentStatusChangedMessage(payment, cancellationToken);
-            }
+                await _repository.CreatePayment(payment, cancellationToken);
+                await _repository.SaveChangesAsync(cancellationToken);
+
+                if (payment.Status == "Completed" || payment.Status == "Failed")
+                {
+                    // TransactionalOutbox pattern implementation for Kafka
+                    var outboxMessage = await GetPaymentStatusChangedOutboxMessage(payment, cancellationToken);
+                    await _repository.CreateOutboxMessage(outboxMessage, cancellationToken);
+                    await _repository.SaveChangesAsync(cancellationToken);
+                }
+
+                _logger.LogInformation($"Payment created successfully with status {payment.Status}");
+            }, cancellationToken);
+
         }
 
         public async Task<PaymentReadDto?> GetPaymentById(int id, CancellationToken cancellationToken = default)
@@ -100,10 +111,18 @@ namespace Payments.Business
             var payment = await _repository.GetPaymentById(id, cancellationToken);
             if (payment == null) return false;
 
+            // Checking if the order is still Pending
+            // In some way, I should check if the order is not completed or failed
+            // but I prefer to check from the payments, so I don't make a request to the orders service
+            // (like I made in the CreatePayment method)
             var payments = await _repository.GetAllPaymentsByOrderId(payment.OrderId, cancellationToken);
             if (payments.Any(x => x.Status == "Completed") == true)
             {
                 throw new InvalidOperationException($"A completed payment for OrderId {payment.OrderId} already exists! You can't pay again.");
+            }
+            if (payments.Any(x => x.Status == "Failed") == true)
+            {
+                throw new InvalidOperationException($"A failed payment for OrderId {payment.OrderId} already exists! You must create a new order.");
             }
 
             if (payment.Status == "Failed")
@@ -119,44 +138,51 @@ namespace Payments.Business
 
             var oldStatus = payment.Status;
             _mapper.Map(paymentUpdateDto, payment);
-            await _repository.UpdatePayment(payment, cancellationToken);
-            await _repository.SaveChangesAsync(cancellationToken);
 
-            _logger.LogInformation($"Payment with id {id} updated successfully with status {payment.Status}");
-
-            // Kafka Integration
-            if (oldStatus != payment.Status)
+            // I open a transaction here because I need consistency between the order and the outbox message
+            await _repository.CreateTransaction(async (CancellationToken cancellation) =>
             {
-                await PublishPaymentStatusChangedMessage(payment, cancellationToken);
-            }
+                await _repository.UpdatePayment(payment, cancellationToken);
+                await _repository.SaveChangesAsync(cancellationToken);
+
+                // TransactionalOutbox pattern implementation for Kafka
+                if (oldStatus != payment.Status)
+                {
+                    var outboxMessage = await GetPaymentStatusChangedOutboxMessage(payment, cancellationToken);
+                    await _repository.CreateOutboxMessage(outboxMessage, cancellationToken);
+                    await _repository.SaveChangesAsync(cancellationToken);
+                }
+
+                _logger.LogInformation($"Payment with id {id} updated successfully with status {payment.Status}");
+            }, cancellationToken);
 
             return true;
         }
 
-        private async Task PublishPaymentStatusChangedMessage(Payment payment, CancellationToken cancellationToken = default)
+        private async Task<OutboxMessage> GetPaymentStatusChangedOutboxMessage(Payment payment, CancellationToken cancellationToken = default)
         {
             OrderReadDto? order = await _ordersClientHttp.ReadOrder(payment.OrderId, cancellationToken);
 
-            var newPaymentStatusChangedMessage = new PaymentStatusChangedMessage
+            var outboxMessage = new OutboxMessage
             {
-                PaymentId = payment.Id,
-                OrderId = payment.OrderId,
-                Status = payment.Status,
-                CreatedAt = DateTime.Now,
-                OrderDetails = order?.OrderDetails?.Select(detail => new OrderDetailMessage
+                Payload = JsonConvert.SerializeObject(new PaymentStatusChangedMessage
                 {
-                    ItemId = detail.ItemId,
-                    Quantity = detail.Quantity
-                }).ToList() ?? new List<OrderDetailMessage>()
+                    PaymentId = payment.Id,
+                    OrderId = payment.OrderId,
+                    Status = payment.Status,
+                    CreatedAt = DateTime.Now,
+                    OrderDetails = order?.OrderDetails?.Select(detail => new OrderDetailMessage
+                    {
+                        ItemId = detail.ItemId,
+                        Quantity = detail.Quantity
+                    }).ToList() ?? new List<OrderDetailMessage>()
+                }),
+                Topic = "payment-status-changed",
+                CreatedAt = DateTime.Now,
+                Processed = false
             };
 
-            await _kafkaProducer.ProduceAsync(
-                "payment-status-changed",
-                Guid.NewGuid().ToString(),
-                newPaymentStatusChangedMessage
-            );
-
-            _logger.LogInformation($"Topic payment-status-changed --> PaymentStatusChangedMessage published for PaymentId: {payment.Id}");
+            return outboxMessage;
         }
     }
 }

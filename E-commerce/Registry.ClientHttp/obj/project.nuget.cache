@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e19r6zR6kTI=",
+  "dgSpecHash": "Ww2nW5oY17Q=",
   "success": true,
-  "projectFilePath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj",
+  "projectFilePath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\39338\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\39338\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

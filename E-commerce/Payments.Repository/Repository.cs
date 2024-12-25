@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using Payments.Repository.Abstraction;
 using Payments.Repository.Model;
 using System;
@@ -16,6 +17,30 @@ namespace Payments.Repository
         public Repository(PaymentsDbContext paymentsDbContext)
         {
             _paymentsDbContext = paymentsDbContext;
+        }
+
+        public async Task CreateTransaction(Func<CancellationToken, Task> action, CancellationToken cancellationToken = default)
+        {
+            if (_paymentsDbContext.Database.CurrentTransaction != null)
+            {
+                // The connection is already in a transaction
+                await action(cancellationToken);
+            }
+            else
+            {
+                // Start a new transaction
+                using IDbContextTransaction transaction = await _paymentsDbContext.Database.BeginTransactionAsync(cancellationToken);
+                try
+                {
+                    await action(cancellationToken);
+                    await transaction.CommitAsync(cancellationToken);
+                }
+                catch
+                {
+                    await transaction.RollbackAsync(cancellationToken);
+                    throw;
+                }
+            }
         }
 
         public async Task SaveChangesAsync(CancellationToken cancellationToken = default)
@@ -44,6 +69,18 @@ namespace Payments.Repository
         {
             _paymentsDbContext.Payments.Update(payment);
             return true;
+        }
+
+        public async Task CreateOutboxMessage(OutboxMessage outboxMessage, CancellationToken cancellationToken = default)
+        {
+            await _paymentsDbContext.OutboxMessages.AddAsync(outboxMessage, cancellationToken);
+        }
+
+        public async Task<List<OutboxMessage>> GetPendingOutboxMessages(CancellationToken cancellationToken = default)
+        {
+            return await _paymentsDbContext.OutboxMessages
+                .Where(m => m.Processed == false)
+                .ToListAsync();
         }
     }
 }

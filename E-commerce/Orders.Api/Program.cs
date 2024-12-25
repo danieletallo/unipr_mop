@@ -7,6 +7,7 @@ using Orders.Business.Profiles;
 using KafkaFlow;
 using KafkaFlow.Serializer;
 using Orders.Business.Kafka.MessageHandlers;
+using Orders.Business.Kafka.TransactionalOutbox;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +16,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<OrdersDbContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection", b => b.MigrationsAssembly("Orders.Repository")));
 
 builder.Services.AddScoped<IRepository, Repository>();
-builder.Services.AddTransient<IBusiness, Business>();
+builder.Services.AddScoped<IBusiness, Business>();
 
 object value = builder.Services.AddAutoMapper(typeof(AssemblyMarker));
 
@@ -66,6 +67,9 @@ builder.Services.AddKafka(
                 )
         )
 );
+
+// Add Kafka Outbox Message Processor as a hosted service
+builder.Services.AddHostedService<OutboxMessageProcessor>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
