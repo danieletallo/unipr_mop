@@ -13,11 +13,14 @@ namespace Payments.Repository
     {
         public PaymentsDbContext(DbContextOptions<PaymentsDbContext> options) : base(options) { }
         public DbSet<Payment> Payments { get; set; }
-
+        public DbSet<OutboxMessage> OutboxMessages { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Payment>().HasKey(x => x.Id);
             modelBuilder.Entity<Payment>().Property(x => x.Id).ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<OutboxMessage>().HasKey(x => x.Id);
+            modelBuilder.Entity<OutboxMessage>().Property(x => x.Id).ValueGeneratedOnAdd();
         }
     }
 }

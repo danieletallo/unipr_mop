@@ -9,6 +9,7 @@ using Payments.Repository.Abstraction;
 using KafkaFlow;
 using KafkaFlow.Serializer;
 using KafkaFlow.Configuration;
+using Payments.Business.Kafka.TransactionalOutbox;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +18,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<PaymentsDbContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection", b => b.MigrationsAssembly("Payments.Repository")));
 
 builder.Services.AddScoped<IRepository, Repository>();
-builder.Services.AddTransient<IBusiness, Business>();
+builder.Services.AddScoped<IBusiness, Business>();
 
 object value = builder.Services.AddAutoMapper(typeof(AssemblyMarker));
 
@@ -63,6 +64,9 @@ builder.Services.AddKafka(
                 )
         )
 );
+
+// Add Kafka Outbox Message Processor as a hosted service
+builder.Services.AddHostedService<OutboxMessageProcessor>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

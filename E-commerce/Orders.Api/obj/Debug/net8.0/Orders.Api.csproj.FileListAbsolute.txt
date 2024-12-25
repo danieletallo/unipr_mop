@@ -223,3 +223,7 @@ C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientat
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.Api\obj\Debug\net8.0\Orders.Api.pdb
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.Api\obj\Debug\net8.0\Orders.Api.genruntimeconfig.cache
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Orders.Api\obj\Debug\net8.0\ref\Orders.Api.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Orders.Api\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Orders.Api\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Orders.Api\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Orders.Api\bin\Debug\net8.0\Newtonsoft.Json.dll

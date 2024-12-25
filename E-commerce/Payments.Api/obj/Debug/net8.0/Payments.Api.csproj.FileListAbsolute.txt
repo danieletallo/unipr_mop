@@ -215,3 +215,7 @@ C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientat
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\obj\Debug\net8.0\Payments.Api.pdb
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\obj\Debug\net8.0\Payments.Api.genruntimeconfig.cache
 C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\E-commerce\Payments.Api\obj\Debug\net8.0\ref\Payments.Api.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Payments.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Payments.Api\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Payments.Api\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\39338\Desktop\Universita\3 ANNO\3anno_1semestre\Programmazione orientata ai Microservizi\unipr_mop\e-commerce\Payments.Api\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll

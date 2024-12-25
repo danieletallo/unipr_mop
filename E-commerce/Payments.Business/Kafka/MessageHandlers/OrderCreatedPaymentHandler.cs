@@ -1,12 +1,13 @@
 ﻿using KafkaFlow;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 using Orders.Shared;
 using Payments.Business.Abstraction;
 using Payments.Shared;
 
 namespace Payments.Business.Kafka.MessageHandlers
 {
-    public class OrderCreatedPaymentHandler : IMessageHandler<OrderCreatedMessage>
+    public class OrderCreatedPaymentHandler : IMessageHandler<string>
     {
         private readonly IServiceProvider _serviceProvider;
 
@@ -15,14 +16,20 @@ namespace Payments.Business.Kafka.MessageHandlers
             _serviceProvider = serviceProvider;
         }
 
-        public async Task Handle(IMessageContext context, OrderCreatedMessage message)
+        public async Task Handle(IMessageContext context, string message)
         {
             using var scope = _serviceProvider.CreateScope();
             var business = scope.ServiceProvider.GetRequiredService<IBusiness>();
 
+            var orderCreatedMessage = JsonConvert.DeserializeObject<OrderCreatedMessage>(message);
+            if (orderCreatedMessage == null)
+            {
+                throw new InvalidOperationException("Failed to deserialize OrderCreatedMessage.");
+            }
+
             var newPayment = new PaymentInsertDto
             {
-                OrderId = message.OrderId,
+                OrderId = orderCreatedMessage.OrderId,
                 Status = "Pending"
             };
 

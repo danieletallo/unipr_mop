@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Api\\Warehouse.Api.csproj": {}
+    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Api\\Warehouse.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Shared\\Orders.Shared.csproj": {
+    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Orders.Shared\\Orders.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Shared\\Orders.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Orders.Shared\\Orders.Shared.csproj",
         "projectName": "Orders.Shared",
-        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Shared\\Orders.Shared.csproj",
+        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Orders.Shared\\Orders.Shared.csproj",
         "packagesPath": "C:\\Users\\39338\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Shared\\obj\\",
         "projectStyle": "PackageReference",
@@ -70,12 +70,12 @@
         }
       }
     },
-    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Shared\\Payments.Shared.csproj": {
+    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Payments.Shared\\Payments.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Shared\\Payments.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Payments.Shared\\Payments.Shared.csproj",
         "projectName": "Payments.Shared",
-        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Shared\\Payments.Shared.csproj",
+        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Payments.Shared\\Payments.Shared.csproj",
         "packagesPath": "C:\\Users\\39338\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Shared\\obj\\",
         "projectStyle": "PackageReference",
@@ -136,14 +136,14 @@
         }
       }
     },
-    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj": {
+    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj",
+        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj",
         "projectName": "Registry.ClientHttp",
-        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj",
+        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj",
         "packagesPath": "C:\\Users\\39338\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\obj\\",
+        "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.ClientHttp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -165,8 +165,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Shared\\Registry.Shared.csproj": {
-                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Shared\\Registry.Shared.csproj"
+              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.Shared\\Registry.Shared.csproj": {
+                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.Shared\\Registry.Shared.csproj"
               }
             }
           }
@@ -212,14 +212,14 @@
         }
       }
     },
-    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Shared\\Registry.Shared.csproj": {
+    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.Shared\\Registry.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Shared\\Registry.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.Shared\\Registry.Shared.csproj",
         "projectName": "Registry.Shared",
-        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Shared\\Registry.Shared.csproj",
+        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.Shared\\Registry.Shared.csproj",
         "packagesPath": "C:\\Users\\39338\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.Shared\\obj\\",
+        "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -278,14 +278,14 @@
         }
       }
     },
-    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Api\\Warehouse.Api.csproj": {
+    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Api\\Warehouse.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Api\\Warehouse.Api.csproj",
+        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Api\\Warehouse.Api.csproj",
         "projectName": "Warehouse.Api",
-        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Api\\Warehouse.Api.csproj",
+        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Api\\Warehouse.Api.csproj",
         "packagesPath": "C:\\Users\\39338\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Api\\obj\\",
+        "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -307,14 +307,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj": {
-                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj"
+              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj": {
+                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj"
               },
-              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Business\\Warehouse.Business.csproj": {
-                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Business\\Warehouse.Business.csproj"
+              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Business\\Warehouse.Business.csproj": {
+                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Business\\Warehouse.Business.csproj"
               },
-              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj": {
-                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj"
+              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj": {
+                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj"
               }
             }
           }
@@ -401,14 +401,14 @@
         }
       }
     },
-    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Business\\Warehouse.Business.csproj": {
+    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Business\\Warehouse.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Business\\Warehouse.Business.csproj",
+        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Business\\Warehouse.Business.csproj",
         "projectName": "Warehouse.Business",
-        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Business\\Warehouse.Business.csproj",
+        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Business\\Warehouse.Business.csproj",
         "packagesPath": "C:\\Users\\39338\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Business\\obj\\",
+        "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -430,20 +430,20 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Shared\\Orders.Shared.csproj": {
-                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.Shared\\Orders.Shared.csproj"
+              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Orders.Shared\\Orders.Shared.csproj": {
+                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Orders.Shared\\Orders.Shared.csproj"
               },
-              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Shared\\Payments.Shared.csproj": {
-                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Payments.Shared\\Payments.Shared.csproj"
+              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Payments.Shared\\Payments.Shared.csproj": {
+                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Payments.Shared\\Payments.Shared.csproj"
               },
-              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj": {
-                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj"
+              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj": {
+                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Registry.ClientHttp\\Registry.ClientHttp.csproj"
               },
-              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Warehouse.Repository.csproj": {
-                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Warehouse.Repository.csproj"
+              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Repository\\Warehouse.Repository.csproj": {
+                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Repository\\Warehouse.Repository.csproj"
               },
-              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj": {
-                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj"
+              "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj": {
+                "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj"
               }
             }
           }
@@ -471,6 +471,10 @@
             "KafkaFlow": {
               "target": "Package",
               "version": "[3.0.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -493,12 +497,12 @@
         }
       }
     },
-    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Warehouse.Repository.csproj": {
+    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Repository\\Warehouse.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Warehouse.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Repository\\Warehouse.Repository.csproj",
         "projectName": "Warehouse.Repository",
-        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\Warehouse.Repository.csproj",
+        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Repository\\Warehouse.Repository.csproj",
         "packagesPath": "C:\\Users\\39338\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Repository\\obj\\",
         "projectStyle": "PackageReference",
@@ -569,14 +573,14 @@
         }
       }
     },
-    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj": {
+    "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj",
         "projectName": "Warehouse.Shared",
-        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj",
+        "projectPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Shared\\Warehouse.Shared.csproj",
         "packagesPath": "C:\\Users\\39338\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Warehouse.Shared\\obj\\",
+        "outputPath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Warehouse.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

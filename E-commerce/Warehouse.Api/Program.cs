@@ -15,7 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<WarehouseDbContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection", b => b.MigrationsAssembly("Warehouse.Repository")));
 
 builder.Services.AddScoped<IRepository, Repository>();
-builder.Services.AddTransient<IBusiness, Business>();
+builder.Services.AddScoped<IBusiness, Business>();
 
 object value = builder.Services.AddAutoMapper(typeof(AssemblyMarker));
 

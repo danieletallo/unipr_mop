@@ -2,6 +2,7 @@
 using Orders.Repository.Model;
 using Orders.Shared;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace Orders.Repository
 {
@@ -12,6 +13,30 @@ namespace Orders.Repository
         public Repository(OrdersDbContext ordersDbContext)
         {
             _ordersDbContext = ordersDbContext;
+        }
+
+        public async Task CreateTransaction(Func<CancellationToken, Task> action, CancellationToken cancellationToken = default)
+        {
+            if (_ordersDbContext.Database.CurrentTransaction != null)
+            {
+                // The connection is already in a transaction
+                await action(cancellationToken);
+            }
+            else
+            {
+                // Start a new transaction
+                using IDbContextTransaction transaction = await _ordersDbContext.Database.BeginTransactionAsync(cancellationToken);
+                try
+                {
+                    await action(cancellationToken);
+                    await transaction.CommitAsync(cancellationToken);
+                }
+                catch
+                {
+                    await transaction.RollbackAsync(cancellationToken);
+                    throw;
+                }
+            }
         }
 
         public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
@@ -45,6 +70,18 @@ namespace Orders.Repository
 
             _ordersDbContext.Orders.Remove(order);
             return true;
+        }
+
+        public async Task CreateOutboxMessage(OutboxMessage outboxMessage, CancellationToken cancellationToken = default)
+        {
+            await _ordersDbContext.OutboxMessages.AddAsync(outboxMessage, cancellationToken);
+        }
+
+        public async Task<List<OutboxMessage>> GetPendingOutboxMessages(CancellationToken cancellationToken = default)
+        {
+            return await _ordersDbContext.OutboxMessages
+                .Where(m => m.Processed == false)
+                .ToListAsync();
         }
     }
 }

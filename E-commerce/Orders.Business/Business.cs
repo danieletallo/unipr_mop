@@ -8,6 +8,7 @@ using Registry.Shared;
 using Warehouse.Shared;
 using KafkaFlow;
 using KafkaFlow.Producers;
+using Newtonsoft.Json;
 
 namespace Orders.Business
 {
@@ -18,18 +19,15 @@ namespace Orders.Business
         private readonly IMapper _mapper;
         private readonly Registry.ClientHttp.Abstraction.IClientHttp _registryClientHttp;
         private readonly Warehouse.ClientHttp.Abstraction.IClientHttp _warehouseClientHttp;
-        private readonly IMessageProducer _kafkaProducer;
 
         public Business(IRepository repository, ILogger<Business> logger, IMapper mapper,
-                        Registry.ClientHttp.Abstraction.IClientHttp registryClientHttp, Warehouse.ClientHttp.Abstraction.IClientHttp warehouseClientHttp,
-                        IProducerAccessor producerAccessor)
+                        Registry.ClientHttp.Abstraction.IClientHttp registryClientHttp, Warehouse.ClientHttp.Abstraction.IClientHttp warehouseClientHttp)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
             _registryClientHttp = registryClientHttp;
             _warehouseClientHttp = warehouseClientHttp;
-            _kafkaProducer = producerAccessor.GetProducer("orders");
         }
 
         public async Task CreateOrder(OrderInsertDto orderInsertDto, CancellationToken cancellationToken = default)
@@ -85,13 +83,19 @@ namespace Orders.Business
             }
             order.TotalAmount = order.OrderDetails.Sum(x => x.TotalPrice);
 
-            await _repository.CreateOrder(order, cancellationToken);
-            await _repository.SaveChangesAsync(cancellationToken);
+            // I open a transaction here because I need consistency between the order and the outbox message
+            await _repository.CreateTransaction(async (CancellationToken cancellation) =>
+            {
+                await _repository.CreateOrder(order, cancellationToken);
+                await _repository.SaveChangesAsync(cancellationToken);
 
-            _logger.LogInformation("Order created successfully.");
+                // TransactionalOutbox pattern implementation for Kafka
+                var outboxMessage = await GetOrderCreatedOutboxMessage(order, cancellationToken);
+                await _repository.CreateOutboxMessage(outboxMessage, cancellationToken);
+                await _repository.SaveChangesAsync(cancellationToken);
 
-            // Kafka integration
-            await PublishOrderCreatedMessage(order, cancellationToken);
+                _logger.LogInformation("Order created successfully.");
+            }, cancellationToken);
         }
 
         public async Task<OrderReadDto?> GetOrderById(int id, CancellationToken cancellationToken = default)
@@ -168,12 +172,11 @@ namespace Orders.Business
             return true;
         }
 
-        private async Task PublishOrderCreatedMessage(Order order, CancellationToken cancellationToken = default)
+        private async Task<OutboxMessage> GetOrderCreatedOutboxMessage(Order order, CancellationToken cancellationToken)
         {
-            await _kafkaProducer.ProduceAsync(
-                "order-created",
-                Guid.NewGuid().ToString(),
-                new OrderCreatedMessage
+            var outboxMessage = new OutboxMessage
+            {
+                Payload = JsonConvert.SerializeObject(new OrderCreatedMessage
                 {
                     OrderId = order.Id,
                     Amount = order.TotalAmount,
@@ -183,10 +186,13 @@ namespace Orders.Business
                         ItemId = x.ItemId,
                         Quantity = x.Quantity
                     }).ToList()
-                }
-            );
+                }),
+                Topic = "order-created",
+                CreatedAt = DateTime.Now,
+                Processed = false
+            };
 
-            _logger.LogInformation($"Topic order-created --> OrderCreatedMessage published for OrderId: {order.Id}");
+            return outboxMessage;
         }
     }
 }

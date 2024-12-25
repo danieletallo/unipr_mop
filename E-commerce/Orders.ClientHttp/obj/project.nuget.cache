@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d1YHz+5//NQ=",
+  "dgSpecHash": "N37GZSd3S1c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\E-commerce\\Orders.ClientHttp\\Orders.ClientHttp.csproj",
+  "projectFilePath": "C:\\Users\\39338\\Desktop\\Universita\\3 ANNO\\3anno_1semestre\\Programmazione orientata ai Microservizi\\unipr_mop\\e-commerce\\Orders.ClientHttp\\Orders.ClientHttp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\39338\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\39338\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
