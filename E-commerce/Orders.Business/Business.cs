@@ -153,9 +153,9 @@ namespace Orders.Business
         {
             var order = await _repository.GetOrderById(id, cancellationToken);
 
-            if (order != null && order.Status != "Pending")
+            if (order != null && order.Status == "Pending")
             {
-                var error = $"Order with ID {id} cannot be deleted because it is not in Pending status.";
+                var error = $"Order with ID {id} cannot be deleted because it is in Pending status.";
                 _logger.LogError(error);
                 throw new Exception(error);
             }
