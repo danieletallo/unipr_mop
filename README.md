@@ -9,8 +9,9 @@ Project Structure:
 
 Added **Kafka** for asynchronous communication.
 
-
-Created 2 topics:
+Created 2 Kafka topics:
 
 - "order-created": Produced by OrdersService and consumed by PaymentsService and by WarehouseService.
 - "payment-status-changed": Produced by PaymentsService and consumed by OrdersService and WarehouseService.
+- "customer-created": Produced by RegistryService and consumed by OrdersService.
+- "supplier-created": Produced by RegistryService and consumed by WarehouseService.
