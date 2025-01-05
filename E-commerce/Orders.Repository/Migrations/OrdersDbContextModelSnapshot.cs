@@ -22,6 +22,16 @@ namespace Orders.Repository.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Orders.Repository.Model.CustomerCache", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CustomersCache");
+                });
+
             modelBuilder.Entity("Orders.Repository.Model.Order", b =>
                 {
                     b.Property<int>("Id")

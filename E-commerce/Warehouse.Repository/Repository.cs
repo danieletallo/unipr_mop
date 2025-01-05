@@ -55,5 +55,20 @@ namespace Warehouse.Repository
                 .Where(o => o.ItemId == itemId && o.Timestamp >= DateTime.Now.AddDays(-days))
                 .ToListAsync(cancellationToken);
         }
+
+        public async Task CreateSupplierCache(int supplierId, CancellationToken cancellationToken = default)
+        {
+            var newSupplier = new SupplierCache
+            {
+                Id = supplierId
+            };
+
+            await _warehouseDbContext.SuppliersCache.AddAsync(newSupplier, cancellationToken);
+        }
+
+        public async Task<bool> CheckSupplierExistence(int supplierId, CancellationToken cancellationToken = default)
+        {
+            return await _warehouseDbContext.SuppliersCache.AnyAsync(c => c.Id == supplierId, cancellationToken);
+        }
     }
 }

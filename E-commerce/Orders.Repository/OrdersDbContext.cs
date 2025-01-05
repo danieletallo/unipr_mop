@@ -9,6 +9,7 @@ namespace Orders.Repository
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<OutboxMessage> OutboxMessages { get; set; }
+        public DbSet<CustomerCache> CustomersCache { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -21,6 +22,9 @@ namespace Orders.Repository
 
             modelBuilder.Entity<OutboxMessage>().HasKey(x => x.Id);
             modelBuilder.Entity<OutboxMessage>().Property(e => e.Id).ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<CustomerCache>().HasKey(x => x.Id);
+            modelBuilder.Entity<CustomerCache>().Property(e => e.Id).ValueGeneratedNever();
         }
     }
 }

@@ -9,6 +9,7 @@ namespace Registry.Repository.Abstraction
 {
     public interface IRepository
     {
+        Task CreateTransaction(Func<CancellationToken, Task> action, CancellationToken cancellationToken = default);
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
         Task CreateCustomer(Customer customer, CancellationToken cancellationToken = default);
         Task<Customer?> GetCustomerById(int id, CancellationToken cancellationToken = default);
@@ -16,5 +17,7 @@ namespace Registry.Repository.Abstraction
         Task CreateSupplier(Supplier supplier, CancellationToken cancellationToken = default);
         Task<Supplier?> GetSupplierById(int id, CancellationToken cancellationToken = default);
         Task<List<Supplier>> GetAllSuppliers(CancellationToken cancellationToken = default);
+        Task CreateOutboxMessage(OutboxMessage outboxMessage, CancellationToken cancellationToken = default);
+        Task<List<OutboxMessage>> GetPendingOutboxMessages(CancellationToken cancellationToken = default);
     }
 }

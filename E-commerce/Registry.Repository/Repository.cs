@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace Registry.Repository
 {
@@ -16,6 +17,30 @@ namespace Registry.Repository
         public Repository(RegistryDbContext registryDbContext)
         {
             _registryDbContext = registryDbContext;
+        }
+
+        public async Task CreateTransaction(Func<CancellationToken, Task> action, CancellationToken cancellationToken = default)
+        {
+            if (_registryDbContext.Database.CurrentTransaction != null)
+            {
+                // The connection is already in a transaction
+                await action(cancellationToken);
+            }
+            else
+            {
+                // Start a new transaction
+                using IDbContextTransaction transaction = await _registryDbContext.Database.BeginTransactionAsync(cancellationToken);
+                try
+                {
+                    await action(cancellationToken);
+                    await transaction.CommitAsync(cancellationToken);
+                }
+                catch
+                {
+                    await transaction.RollbackAsync(cancellationToken);
+                    throw;
+                }
+            }
         }
 
         public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
@@ -57,6 +82,19 @@ namespace Registry.Repository
         {
             return await _registryDbContext.Suppliers
                 .ToListAsync(cancellationToken);
+        }
+
+        // Outbox Messages
+        public async Task CreateOutboxMessage(OutboxMessage outboxMessage, CancellationToken cancellationToken = default)
+        {
+            await _registryDbContext.OutboxMessages.AddAsync(outboxMessage, cancellationToken);
+        }
+
+        public async Task<List<OutboxMessage>> GetPendingOutboxMessages(CancellationToken cancellationToken = default)
+        {
+            return await _registryDbContext.OutboxMessages
+                .Where(m => m.Processed == false)
+                .ToListAsync();
         }
     }
 }

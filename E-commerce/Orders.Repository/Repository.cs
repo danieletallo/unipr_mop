@@ -72,6 +72,21 @@ namespace Orders.Repository
             return true;
         }
 
+        public async Task CreateCustomerCache(int customerId, CancellationToken cancellationToken = default)
+        {
+            var newCustomer = new CustomerCache
+            {
+                Id = customerId
+            };
+
+            await _ordersDbContext.CustomersCache.AddAsync(newCustomer, cancellationToken);
+        }
+
+        public async Task<bool> CheckCustomerExistence(int customerId, CancellationToken cancellationToken = default)
+        {
+            return await _ordersDbContext.CustomersCache.AnyAsync(c => c.Id == customerId, cancellationToken);
+        }
+
         public async Task CreateOutboxMessage(OutboxMessage outboxMessage, CancellationToken cancellationToken = default)
         {
             await _ordersDbContext.OutboxMessages.AddAsync(outboxMessage, cancellationToken);

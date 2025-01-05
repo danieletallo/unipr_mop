@@ -16,5 +16,7 @@ namespace Warehouse.Repository.Abstraction
         Task<bool> UpdateItem(Item item, CancellationToken cancellationToken = default);
         Task CreateItemHistory(ItemHistory history, CancellationToken cancellationToken = default);
         Task<List<ItemHistory>> GetItemHistory(int id, int days, CancellationToken cancellationToken = default);
+        Task CreateSupplierCache(int supplierId, CancellationToken cancellationToken = default);
+        Task<bool> CheckSupplierExistence(int supplierId, CancellationToken cancellationToken = default);
     }
 }
