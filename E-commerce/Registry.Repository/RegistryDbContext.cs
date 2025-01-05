@@ -8,6 +8,7 @@ namespace Registry.Repository
         public RegistryDbContext(DbContextOptions<RegistryDbContext> dbContextOptions) : base(dbContextOptions) { }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<OutboxMessage> OutboxMessages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -16,6 +17,9 @@ namespace Registry.Repository
 
             modelBuilder.Entity<Supplier>().HasKey(x => x.Id);
             modelBuilder.Entity<Supplier>().Property(e => e.Id).ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<OutboxMessage>().HasKey(x => x.Id);
+            modelBuilder.Entity<OutboxMessage>().Property(e => e.Id).ValueGeneratedOnAdd();
         }
     }
 }

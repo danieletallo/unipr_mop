@@ -31,8 +31,17 @@ namespace Warehouse.Business
 
         public async Task CreateItem(ItemInsertDto itemInsertDto, CancellationToken cancellationToken = default)
         {
-            SupplierReadDto? supplier = await _registryClientHttp.ReadSupplier(itemInsertDto.SupplierId, cancellationToken);
-            if (supplier == null)
+            //SupplierReadDto? supplier = await _registryClientHttp.ReadSupplier(itemInsertDto.SupplierId, cancellationToken);
+            //if (supplier == null)
+            //{
+            //    var error = $"Item creation failed: supplier with ID {itemInsertDto.SupplierId} not found.";
+            //    _logger.LogError(error);
+            //    throw new Exception(error);
+            //}
+
+            // Checking cache
+            var supplierExists = await _repository.CheckSupplierExistence(itemInsertDto.SupplierId, cancellationToken);
+            if (supplierExists == false)
             {
                 var error = $"Item creation failed: supplier with ID {itemInsertDto.SupplierId} not found.";
                 _logger.LogError(error);
@@ -149,6 +158,14 @@ namespace Warehouse.Business
             
             var itemsHistoryReadDto = _mapper.Map<List<ItemHistoryReadDto>>(itemHistory);
             return itemsHistoryReadDto;
+        }
+
+        public async Task CreateSupplierCache(int supplierId, CancellationToken cancellationToken = default)
+        {
+            // Theorically I should check if the supplier exists in the registry service
+            // but I will skip this because the supplier could be only created and not deleted
+            await _repository.CreateSupplierCache(supplierId, cancellationToken);
+            await _repository.SaveChangesAsync(cancellationToken);
         }
     }
 }

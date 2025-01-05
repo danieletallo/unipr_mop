@@ -79,6 +79,16 @@ namespace Warehouse.Repository.Migrations
 
                     b.ToTable("ItemsHistory");
                 });
+
+            modelBuilder.Entity("Warehouse.Repository.Model.SupplierCache", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SuppliersCache");
+                });
 #pragma warning restore 612, 618
         }
     }

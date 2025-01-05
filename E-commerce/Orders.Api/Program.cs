@@ -65,6 +65,20 @@ builder.Services.AddKafka(
                         )
                     )
                 )
+                // Add Kafka Consumer for customer-created topic
+                .CreateTopicIfNotExists("customer-created", 1, 1)
+                .AddConsumer(consumer => consumer
+                    .Topic("customer-created")
+                    .WithGroupId("orders-group")
+                    .WithBufferSize(100)
+                    .WithWorkersCount(10)
+                    .AddMiddlewares(middlewares => middlewares
+                        .AddDeserializer<JsonCoreDeserializer>()
+                        .AddTypedHandlers(h => h
+                            .AddHandler<CustomerCreatedOrdersHandler>()
+                        )
+                    )
+                )
         )
 );
 

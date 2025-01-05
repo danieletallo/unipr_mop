@@ -24,10 +24,19 @@ namespace Registry.Business
         {
             var customer = _mapper.Map<Customer>(customerInsertDto);
 
-            await _repository.CreateCustomer(customer, cancellationToken);
-            await _repository.SaveChangesAsync(cancellationToken);
+            // I open a transaction here because I need consistency between the customer and the outbox message
+            await _repository.CreateTransaction(async (CancellationToken cancellation) =>
+            {
+                await _repository.CreateCustomer(customer, cancellationToken);
+                await _repository.SaveChangesAsync(cancellationToken);
 
-            _logger.LogInformation("Customer created successfully.");
+                // TransactionalOutbox pattern implementation for Kafka
+                var outboxMessage = await GetRegistryCreatedOutboxMessage(customer.Id, "customer-created", cancellationToken);
+                await _repository.CreateOutboxMessage(outboxMessage, cancellationToken);
+                await _repository.SaveChangesAsync(cancellationToken);
+
+                _logger.LogInformation("Customer created successfully.");
+            }, cancellationToken);
         }
 
         public async Task<CustomerReadDto?> GetCustomerById(int id, CancellationToken cancellationToken = default)
@@ -52,10 +61,19 @@ namespace Registry.Business
         {
             var supplier = _mapper.Map<Supplier>(supplierInsertDto);
 
-            await _repository.CreateSupplier(supplier, cancellationToken);
-            await _repository.SaveChangesAsync(cancellationToken);
+            // I open a transaction here because I need consistency between the customer and the outbox message
+            await _repository.CreateTransaction(async (CancellationToken cancellation) =>
+            {
+                await _repository.CreateSupplier(supplier, cancellationToken);
+                await _repository.SaveChangesAsync(cancellationToken);
 
-            _logger.LogInformation("Supplier created successfully.");
+                // TransactionalOutbox pattern implementation for Kafka
+                var outboxMessage = await GetRegistryCreatedOutboxMessage(supplier.Id, "supplier-created", cancellationToken);
+                await _repository.CreateOutboxMessage(outboxMessage, cancellationToken);
+                await _repository.SaveChangesAsync(cancellationToken);
+
+                _logger.LogInformation("Supplier created successfully.");
+            }, cancellationToken);
         }
 
         public async Task<SupplierReadDto?> GetSupplierById(int id, CancellationToken cancellationToken = default)
@@ -74,6 +92,19 @@ namespace Registry.Business
 
             var suppliersReadDto = _mapper.Map<List<SupplierReadDto>>(suppliers);
             return suppliersReadDto;
+        }
+
+        private async Task<OutboxMessage> GetRegistryCreatedOutboxMessage(int registryId, string topic, CancellationToken cancellationToken)
+        {
+            var outboxMessage = new OutboxMessage
+            {
+                Payload = Convert.ToString(registryId),
+                Topic = topic,
+                CreatedAt = DateTime.Now,
+                Processed = false
+            };
+
+            return outboxMessage;
         }
     }
 }

@@ -11,6 +11,8 @@ namespace Orders.Repository.Abstraction
         Task<Order?> GetOrderById(int id, CancellationToken cancellationToken = default);
         Task<List<Order>> GetAllOrders(CancellationToken cancellationToken = default);
         Task<bool> DeleteOrder(int id, CancellationToken cancellationToken = default);
+        Task CreateCustomerCache(int customerId, CancellationToken cancellationToken = default);
+        Task<bool> CheckCustomerExistence(int customerId, CancellationToken cancellationToken = default);
         Task CreateOutboxMessage(OutboxMessage outboxMessage, CancellationToken cancellationToken = default);
         Task<List<OutboxMessage>> GetPendingOutboxMessages(CancellationToken cancellationToken = default);
     }

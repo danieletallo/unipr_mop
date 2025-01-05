@@ -61,6 +61,20 @@ builder.Services.AddKafka(kafka => kafka
                 )
             )
         )
+        // Add Kafka Consumer for supplier-created topic
+        .CreateTopicIfNotExists("supplier-created", 1, 1)
+        .AddConsumer(consumer => consumer
+            .Topic("supplier-created")
+            .WithGroupId("warehouse-group")
+            .WithBufferSize(100)
+            .WithWorkersCount(10)
+            .AddMiddlewares(middlewares => middlewares
+                .AddDeserializer<JsonCoreDeserializer>()
+                .AddTypedHandlers(h => h
+                    .AddHandler<SupplierCreatedWarehouseHandler>()
+                )
+            )
+        )
     )
 );
 

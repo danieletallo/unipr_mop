@@ -9,5 +9,6 @@ namespace Orders.Business.Abstraction
         Task<List<OrderReadDto>> GetAllOrders(CancellationToken cancellationToken = default);
         Task<bool> UpdateOrderStatus(int id, string status, CancellationToken cancellationToken = default);
         Task<bool> DeleteOrder(int id, CancellationToken cancellationToken = default);
+        Task CreateCustomerCache(int id, CancellationToken cancellationToken = default);
     }
 }

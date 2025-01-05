@@ -8,6 +8,7 @@ namespace Warehouse.Repository
         public WarehouseDbContext(DbContextOptions<WarehouseDbContext> options) : base(options) { }
         public DbSet<Item> Items { get; set; }
         public DbSet<ItemHistory> ItemsHistory { get; set; }
+        public DbSet<SupplierCache> SuppliersCache { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -17,6 +18,9 @@ namespace Warehouse.Repository
             modelBuilder.Entity<ItemHistory>().HasKey(x => x.Id);
             modelBuilder.Entity<ItemHistory>().Property(e => e.Id).ValueGeneratedOnAdd();
             modelBuilder.Entity<ItemHistory>().HasIndex(x => x.ItemId);
+
+            modelBuilder.Entity<SupplierCache>().HasKey(x => x.Id);
+            modelBuilder.Entity<SupplierCache>().Property(e => e.Id).ValueGeneratedNever();
         }
     }
 }

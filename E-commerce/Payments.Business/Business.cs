@@ -22,17 +22,14 @@ namespace Payments.Business
         private readonly ILogger<Business> _logger;
         private readonly IMapper _mapper;
         private readonly Orders.ClientHttp.Abstraction.IClientHttp _ordersClientHttp;
-        private readonly IMessageProducer _kafkaProducer;
 
         public Business(IRepository repository, ILogger<Business> logger, IMapper mapper,
-                        Orders.ClientHttp.Abstraction.IClientHttp ordersClientHttp,
-                        IProducerAccessor producerAccessor)
+                        Orders.ClientHttp.Abstraction.IClientHttp ordersClientHttp)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
             _ordersClientHttp = ordersClientHttp;
-            _kafkaProducer = producerAccessor.GetProducer("payments");
         }
 
         public async Task CreatePayment(PaymentInsertDto paymentInsertDto, CancellationToken cancellationToken = default)

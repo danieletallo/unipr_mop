@@ -1,7 +1,10 @@
+using KafkaFlow;
+using KafkaFlow.Serializer;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Registry.Business;
 using Registry.Business.Abstraction;
+using Registry.Business.Kafka.TransactionalOutbox;
 using Registry.Business.Profiles;
 using Registry.Repository;
 using Registry.Repository.Abstraction;
@@ -16,6 +19,32 @@ builder.Services.AddScoped<IRepository, Repository>();
 builder.Services.AddScoped<IBusiness, Business>();
 
 object value = builder.Services.AddAutoMapper(typeof(AssemblyMarker));
+
+// Kafka variables
+var kafkaBrokers = builder.Configuration.GetSection("Kafka:Brokers").Value;
+
+// Add Kafka Producer
+builder.Services.AddKafka(
+    kafka => kafka
+        .UseConsoleLog()
+        .AddCluster(
+            cluster => cluster
+                .WithBrokers(new[] { kafkaBrokers })
+                // Add Kafka Producer for customer-created & supplier-created topic
+                .CreateTopicIfNotExists("customer-created", 1, 1)
+                .CreateTopicIfNotExists("supplier-created", 1, 1)
+                .AddProducer(
+                    "registry",
+                    producer => producer
+                        .AddMiddlewares(m =>
+                            m.AddSerializer<JsonCoreSerializer>()
+                            )
+                )
+        )
+);
+
+// Add Kafka Outbox Message Processor as a hosted service
+builder.Services.AddHostedService<OutboxMessageProcessor>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

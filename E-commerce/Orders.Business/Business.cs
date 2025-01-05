@@ -32,8 +32,17 @@ namespace Orders.Business
 
         public async Task CreateOrder(OrderInsertDto orderInsertDto, CancellationToken cancellationToken = default)
         {
-            CustomerReadDto? customer = await _registryClientHttp.ReadCustomer(orderInsertDto.CustomerId, cancellationToken);
-            if (customer == null)
+            //CustomerReadDto? customer = await _registryClientHttp.ReadCustomer(orderInsertDto.CustomerId, cancellationToken);
+            //if (customer == null)
+            //{
+            //    var error = $"Order creation failed: customer with ID {orderInsertDto.CustomerId} not found.";
+            //    _logger.LogError(error);
+            //    throw new Exception(error);
+            //}
+
+            // Checking cache
+            var customerExists = await _repository.CheckCustomerExistence(orderInsertDto.CustomerId, cancellationToken);
+            if (customerExists == false)
             {
                 var error = $"Order creation failed: customer with ID {orderInsertDto.CustomerId} not found.";
                 _logger.LogError(error);
@@ -170,6 +179,14 @@ namespace Orders.Business
             await _repository.SaveChangesAsync(cancellationToken);
             _logger.LogInformation($"Order with ID {id} deleted successfully.");
             return true;
+        }
+
+        public async Task CreateCustomerCache(int customerId, CancellationToken cancellationToken = default)
+        {
+            // Theorically I should check if the customer exists in the registry service
+            // but I will skip this because the customer could be only created and not deleted
+            await _repository.CreateCustomerCache(customerId, cancellationToken);
+            await _repository.SaveChangesAsync(cancellationToken);
         }
 
         private async Task<OutboxMessage> GetOrderCreatedOutboxMessage(Order order, CancellationToken cancellationToken)
