@@ -40,6 +40,7 @@ builder.Services.AddKafka(kafka => kafka
             .WithGroupId("warehouse-group")
             .WithBufferSize(100)
             .WithWorkersCount(10)
+            .WithAutoOffsetReset(AutoOffsetReset.Earliest)
             .AddMiddlewares(middlewares => middlewares
                 .AddDeserializer<JsonCoreDeserializer>()
                 .AddTypedHandlers(h => h
@@ -54,6 +55,7 @@ builder.Services.AddKafka(kafka => kafka
             .WithGroupId("warehouse-group")
             .WithBufferSize(100)
             .WithWorkersCount(10)
+            .WithAutoOffsetReset(AutoOffsetReset.Earliest)
             .AddMiddlewares(middlewares => middlewares
                 .AddDeserializer<JsonCoreDeserializer>()
                 .AddTypedHandlers(h => h
@@ -68,6 +70,7 @@ builder.Services.AddKafka(kafka => kafka
             .WithGroupId("warehouse-group")
             .WithBufferSize(100)
             .WithWorkersCount(10)
+            .WithAutoOffsetReset(AutoOffsetReset.Earliest)
             .AddMiddlewares(middlewares => middlewares
                 .AddDeserializer<JsonCoreDeserializer>()
                 .AddTypedHandlers(h => h
