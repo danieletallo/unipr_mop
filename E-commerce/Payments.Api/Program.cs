@@ -55,6 +55,7 @@ builder.Services.AddKafka(
                     .WithGroupId("payments-group")
                     .WithBufferSize(100)
                     .WithWorkersCount(10)
+                    .WithAutoOffsetReset(AutoOffsetReset.Earliest)
                     .AddMiddlewares(middlewares => middlewares
                         .AddDeserializer<JsonCoreDeserializer>()
                         .AddTypedHandlers(h => h
